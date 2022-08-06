@@ -40,7 +40,7 @@ fi
 # ROOMID 6, Garden -------------------------------------------------#
 if [ "$ROOMID" = "6" ]; then
 if [ "$PRINTINFO" = "1" ]; then
-  echo "You find yourself in the garden. It's nice here.";
+  echo "It's a beautiful garden. Flowers are around.";
   echo -e "You can see a side-door of the cafe, your prior \e[1;32;4;1mseat\e[0m is visible through the door."
 fi
 fi
@@ -59,11 +59,25 @@ if [ "$ROOMID" = "5" ]; then
 fi
 fi
 
+if [ "$QUERY" = "cake" ]; then
+if [ "$ROOMID" = "5" ]; then
+  echo "Use a verb before that, next time.";
+  PRINTINFO=0
+fi
+fi
+
 if [ "$QUERY" = "drink milkshake" ]; then
 if [ "$ROOMID" = "5" ]; then
   echo "You drink the milkshake, nice!";
   PRINTINFO=0
   DRANKMILKSHAKE=1
+fi
+fi
+
+if [ "$QUERY" = "milkshake" ]; then
+if [ "$ROOMID" = "5" ]; then
+  echo "Use a verb before that, next time.";
+  PRINTINFO=0
 fi
 fi
 
