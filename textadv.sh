@@ -14,11 +14,11 @@ DRANKMILKSHAKE=0
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo ""
 
-# This entire game is a biig loop.
-while true; do
-
 # DEBUG: SET ROOMID
 ROOMID=5
+
+# This entire game is a biig loop.
+while true; do
 
 # Set the scene based on what we know, if it's the time we do that.
 
@@ -37,21 +37,50 @@ fi
 fi
 #=================================================================#
 
+# ROOMID 6, Garden -------------------------------------------------#
+if [ "$ROOMID" = "6" ]; then
+if [ "$PRINTINFO" = "1" ]; then
+  echo "You find yourself in the garden. It's nice here.";
+  echo -e "You can see a side-door of the cafe, your prior \e[1;32;4;1mseat\e[0m is visible through the door."
+fi
+fi
+#=================================================================#
+
 
 # Now ask.
 read -p "? " QUERY
 
 # Compare with all available options.
 if [ "$QUERY" = "eat cake" ]; then
+if [ "$ROOMID" = "5" ]; then
   echo "You eat the cake, yum!";
   PRINTINFO=0
   EATENCAKE=1
 fi
+fi
 
 if [ "$QUERY" = "drink milkshake" ]; then
+if [ "$ROOMID" = "5" ]; then
   echo "You drink the milkshake, nice!";
   PRINTINFO=0
   DRANKMILKSHAKE=1
+fi
+fi
+
+if [ "$QUERY" = "garden" ]; then
+if [ "$ROOMID" = "5" ]; then
+  echo "You walk into the garden.";
+  PRINTINFO=1
+  ROOMID=6
+fi
+fi
+
+if [ "$QUERY" = "seat" ]; then
+if [ "$ROOMID" = "6" ]; then
+  echo "You walk back into the cafe and take your rest once more at your seat.";
+  PRINTINFO=0
+  ROOMID=5
+fi
 fi
 
 if [ "$QUERY" = "look" ]; then
@@ -60,6 +89,11 @@ fi
 
 if [ "$QUERY" = "" ]; then
   echo "You need to type something.";
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev roomid" ]; then
+  echo "ROOMID:" && echo $ROOMID;
   PRINTINFO=0
 fi
 
