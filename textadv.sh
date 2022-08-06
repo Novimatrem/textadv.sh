@@ -11,7 +11,7 @@ PRINTINFO=1
 EATENCAKE=0
 DRANKMILKSHAKE=0
 
-echo "Welcome! Valid commands so far are 'look', 'eat cake', and 'drink milkshake'."
+echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo ""
 
 # This entire game is a biig loop.
@@ -26,11 +26,12 @@ ROOMID=5
 if [ "$ROOMID" = "5" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "You find yourself inside a cafe.";
+  echo -e "You can see a side-door that's open to a sunny-looking \e[1;32;4;1mgarden\e[0m."
   if [ "$EATENCAKE" = "0" ]; then
-  echo "There is a cake.";
+  echo -e "There is a \e[1;32;4;1mcake\e[0m.";
 fi
 if [ "$DRANKMILKSHAKE" = "0" ]; then
-  echo "There's a milkshake.";
+  echo -e "There's a \e[1;32;4;1mmilkshake\e[0m.";
 fi
 fi
 fi
@@ -64,4 +65,3 @@ fi
 
 # This entire game is a biig loop.
 done
-
