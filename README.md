@@ -1,6 +1,6 @@
 # textadv.sh
 
-textadv.sh
+work in progress
 
 # how to
 
