@@ -15,8 +15,9 @@ echo Starting game...
 cd /D "%~dp0"
 REM the pings are just for timeout/sleep, a small wait
 @ping -n 3 -w 1000 0.0.0.1 > NUL 
-
+taskkill /IM bash.exe /F
 wt C:\Users\%username%\AppData\Local\Microsoft\WindowsApps\wt.exe "C:\Program Files\Git\git-bash.exe" -c "bash textadv.sh"
+taskkill /IM bash.exe /F
 echo This window can be closed now.
 exit
 REM EOF
