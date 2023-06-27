@@ -15,6 +15,8 @@ EATENCAKE=0
 DRANKMILKSHAKE=0
 
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
+echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m', for example, to inspect an object."
+
 echo ""
 
 # DEBUG: SET ROOMID
@@ -29,12 +31,12 @@ while true; do
 if [ "$ROOMID" = "5" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "You find yourself inside a cafe.";
-  echo -e "You can see a side-door that's open to a sunny-looking \e[1;32;4;1mgarden\e[0m."
+  echo -e "You can see a side-door that's open to a sunny-looking \e[1;33;4;1mgarden\e[0m."
   if [ "$EATENCAKE" = "0" ]; then
-  echo -e "There is a \e[1;32;4;1mcake\e[0m.";
+  echo -e "There is a \e[1;34;4;1mcake\e[0m.";
 fi
 if [ "$DRANKMILKSHAKE" = "0" ]; then
-  echo -e "There's a \e[1;32;4;1mmilkshake\e[0m.";
+  echo -e "There's a \e[1;34;4;1mmilkshake\e[0m.";
 fi
 fi
 fi
@@ -44,7 +46,7 @@ fi
 if [ "$ROOMID" = "6" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "It's a beautiful garden. Flowers are around.";
-  echo -e "You can see a side-door of the cafe, your prior \e[1;32;4;1mseat\e[0m is visible through the door."
+  echo -e "You can see a side-door of the cafe, your prior \e[1;33;4;1mseat\e[0m is visible through the door."
 fi
 fi
 #=================================================================#
@@ -74,6 +76,15 @@ fi
 fi
 fi
 
+if [ "$QUERY" = "look at cake" ]; then
+if [ "$ROOMID" = "5" ]; then
+if [ "$EATENCAKE" = "0" ]; then
+  echo "So delicious and moist.";
+  PRINTINFO=0
+fi
+fi
+fi
+
 if [ "$QUERY" = "cake" ]; then
 if [ "$ROOMID" = "5" ]; then
   echo "Use a verb before that, next time.";
@@ -96,6 +107,15 @@ if [ "$DRANKMILKSHAKE" = "0" ]; then
   echo "You drink the milkshake, nice!";
   PRINTINFO=0
   DRANKMILKSHAKE=1
+fi
+fi
+fi
+
+if [ "$QUERY" = "look at milkshake" ]; then
+if [ "$ROOMID" = "5" ]; then
+if [ "$DRANKMILKSHAKE" = "0" ]; then
+  echo "It's strawberry flavoured.";
+  PRINTINFO=0
 fi
 fi
 fi
