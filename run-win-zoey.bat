@@ -17,6 +17,6 @@ REM the pings are just for timeout/sleep, a small wait
 @ping -n 3 -w 1000 0.0.0.1 > NUL 
 
 wt C:\Users\%username%\AppData\Local\Microsoft\WindowsApps\wt.exe "C:\Program Files\Git\git-bash.exe" -c "bash textadv.sh"
-
+echo This window can be closed now.
 exit
 REM EOF
