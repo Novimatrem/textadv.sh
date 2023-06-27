@@ -2,7 +2,7 @@
 cls
 @title bash text adventure Launcher
 REM the pings are just for timeout/sleep, a small wait
-@ping -n 1 -w 1000 0.0.0.1 > NUL 
+@ping -n 2 -w 1000 0.0.0.1 > NUL 
 echo bash text adventure
 echo.
 echo Required dependencies: 
