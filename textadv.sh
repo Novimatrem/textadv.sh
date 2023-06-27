@@ -53,9 +53,20 @@ read -p "? " QUERY
 # Compare with all available options.
 if [ "$QUERY" = "eat cake" ]; then
 if [ "$ROOMID" = "5" ]; then
+if [ "$EATENCAKE" = "1" ]; then
+  echo "You already have.";
+  EATENCAKE=1
+fi
+fi
+fi
+
+if [ "$QUERY" = "eat cake" ]; then
+if [ "$ROOMID" = "5" ]; then
+if [ "$EATENCAKE" = "0" ]; then
   echo "You eat the cake, yum!";
   PRINTINFO=0
   EATENCAKE=1
+fi
 fi
 fi
 
@@ -68,9 +79,20 @@ fi
 
 if [ "$QUERY" = "drink milkshake" ]; then
 if [ "$ROOMID" = "5" ]; then
+if [ "$DRANKMILKSHAKE" = "1" ]; then
+  echo "You already have.";
+  DRANKMILKSHAKE=1
+fi
+fi
+fi
+
+if [ "$QUERY" = "drink milkshake" ]; then
+if [ "$ROOMID" = "5" ]; then
+if [ "$DRANKMILKSHAKE" = "0" ]; then
   echo "You drink the milkshake, nice!";
   PRINTINFO=0
   DRANKMILKSHAKE=1
+fi
 fi
 fi
 
@@ -109,6 +131,11 @@ fi
 if [ "$QUERY" = "dev roomid" ]; then
   echo "ROOMID:" && echo $ROOMID;
   PRINTINFO=0
+fi
+
+if [ "$QUERY" = "exit" ]; then
+  echo "Bye."
+  exit
 fi
 
 # This entire game is a biig loop.
