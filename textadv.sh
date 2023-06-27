@@ -38,6 +38,28 @@ fi
 if [ "$DRANKMILKSHAKE" = "0" ]; then
   echo -e "There's a \e[1;34;4;1mmilkshake\e[0m.";
 fi
+
+echo ""
+echo "On the wall of the cafe, is some art of a quite-thicc spider girl."
+echo "She has what appears to be a human-like torso, head, and arms, but the rest of her is a large spider."
+echo "Underneath the art, written on a plaque on the frame, are the words 'game engine art test'. Huh."
+echo "
+                                            /(((((#                            
+                                           %%(((#((#                           
+                                     ((((%//(**,..##                           
+                                     %(#%%,.(,...*&%%%.                        
+                                         /.*(***(,*&%.                         
+                        .@@&(#(((#(,    ,.*.*(,*,/                           
+                      (@@@(@@%((#@@@@##&   /**%%%**.                           
+                      @@@@@@@@@@@@@@@@@@@  *.*##%#                             
+                     @@@@@@@@@@@@@@@@%&@@(&%@,../.,%@@@@                       
+                      @@@@@@@@@@@@%@@%@@@@&@@@((((@@@  @@                      
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@    @                      
+                         @@@@@@@@@@@@@@%@@@@@@    @,    @                      
+                            #@*@@@@,@@ %@ @@      @,    @                      
+                             &@ .@  @@. @ @&(@    @     @                      
+                              #& /(  %#   &                                    "
+
 fi
 fi
 #=================================================================#
