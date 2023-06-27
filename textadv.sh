@@ -4,6 +4,9 @@
 # Clear screen
 clear
 
+#Set title of cmd window
+echo -ne "\e]0;bash text adventure\a"
+
 # Enable printing description text
 PRINTINFO=1
 
