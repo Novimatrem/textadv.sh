@@ -25,3 +25,7 @@ Required dependencies are: Bash, and a Terminal Emulator.
 ```cd textadv.sh```
 
 ```bash textadv.sh```
+
+# how to (mac)
+
+haha really
