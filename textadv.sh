@@ -7,15 +7,98 @@ clear
 #Set title of cmd window
 echo -ne "\e]0;bash text adventure\a"
 
+# Check we are the right size to play.
+CHARWIDTH="$(tput cols)"
+CHARHEIGHT="$(tput lines)"
+
+# Print term size test screens.
+# Check forcefully that we're at least the right size at a minimum
+if [ "$CHARWIDTH" -le "79" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 80 characters wide so the game fits."
+echo "It's currently only $CHARWIDTH :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+echo "Closing."
+echo ""
+exit
+fi
+
+if [ "$CHARHEIGHT" -le "23" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 24 characters high so the game fits."
+echo "It's currently only $CHARHEIGHT :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+echo "Closing."
+echo ""
+exit
+fi
+
+# Ensure the window is the correct size.
+clear
+sleep 0.166s
+echo ""
+echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem"
+echo ""
+read -rsp $'Press Enter to start!\n\n'
+clear
+sleep 0.166s
+echo ""
+echo "A test image will be displayed for 5 seconds."
+echo "The letter o should be in each CORNER of your Terminal."
+echo "The test image should be a complete unbroken box, a border."
+echo ""
+echo "(Loading...)"
+sleep 11.5s
+echo "(Loading...)"
+clear
+sleep 0.166s
+# Ideal Terminal size alignment calibration screen
+echo -ne "o------------------------------------------------------------------------------o"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "|                                                                              |"
+echo -ne "o------------------------------------------------------------------------------o"
+sleep 9s
+clear
+sleep 0.166s
+echo ""
+read -rsp $'Did the test image display correctly?\nIf so, Press Enter to continue...\n\nIF NOT, you need to resize your Terminal to be 80x24 characters, so the game\nfits. The Terminal size ideal for the game is 80x24.\nThat is 80 characters wide, and 24 characters high.\n\n(awaiting input)'
+clear
+sleep 0.166s
+
 # Enable printing description text
 PRINTINFO=1
 
 # Set all inventory items as you wish them.
 EATENCAKE=0
 DRANKMILKSHAKE=0
-
+# Begin what the user experiences
+echo ""
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
-echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m', for example, to inspect an object."
+echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
 
 echo ""
 
@@ -24,6 +107,29 @@ ROOMID=5
 
 # This entire game is a biig loop.
 while true; do
+
+# Check we remain the right size to play.
+CHARWIDTH="$(tput cols)"
+CHARHEIGHT="$(tput lines)"
+
+# Continue to ensure we're at the right size
+if [ "$CHARWIDTH" -le "79" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 80 characters wide so the game fits."
+echo "It's currently only $CHARWIDTH :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+fi
+
+if [ "$CHARHEIGHT" -le "23" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 24 characters high so the game fits."
+echo "It's currently only $CHARHEIGHT :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+fi
 
 # Set the scene based on what we know, if it's the time we do that.
 
@@ -39,26 +145,9 @@ if [ "$DRANKMILKSHAKE" = "0" ]; then
   echo -e "There's a \e[1;34;4;1mmilkshake\e[0m.";
 fi
 
-echo ""
-echo "On the wall of the cafe, is some art of a quite-thicc spider girl."
-echo "She has what appears to be a human-like torso, head, and arms, but the rest of her is a large spider."
-echo "Underneath the art, written on a plaque on the frame, are the words 'game engine art test'. Huh."
-echo "
-                                            /(((((#                            
-                                           %%(((#((#                           
-                                     ((((%//(**,..##                           
-                                     %(#%%,.(,...*&%%%.                        
-                                         /.*(***(,*&%.                         
-                        .@@&(#(((#(,    ,.*.*(,*,/                           
-                      (@@@(@@%((#@@@@##&   /**%%%**.                           
-                      @@@@@@@@@@@@@@@@@@@  *.*##%#                             
-                     @@@@@@@@@@@@@@@@%&@@(&%@,../.,%@@@@                       
-                      @@@@@@@@@@@@%@@%@@@@&@@@((((@@@  @@                      
-                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@    @                      
-                         @@@@@@@@@@@@@@%@@@@@@    @,    @                      
-                            #@*@@@@,@@ %@ @@      @,    @                      
-                             &@ .@  @@. @ @&(@    @     @                      
-                              #& /(  %#   &                                    "
+echo -e "On the nearby wall, there's a \e[1;34;4;1mpainting\e[0m.";
+
+
 
 fi
 fi
@@ -68,7 +157,7 @@ fi
 if [ "$ROOMID" = "6" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "It's a beautiful garden. Flowers are around.";
-  echo -e "You can see a side-door of the cafe, your prior \e[1;33;4;1mseat\e[0m is visible through the door."
+  echo -e "You can see a side-door of the cafe, your prior \e[1;33;4;1mseat\e[0m is visible indoors."
 fi
 fi
 #=================================================================#
@@ -145,6 +234,40 @@ fi
 if [ "$QUERY" = "milkshake" ]; then
 if [ "$ROOMID" = "5" ]; then
   echo "Use a verb before that, next time.";
+  PRINTINFO=0
+fi
+fi
+
+if [ "$QUERY" = "painting" ]; then
+if [ "$ROOMID" = "5" ]; then
+  echo "Use a verb before that, next time.";
+  PRINTINFO=0
+fi
+fi
+
+if [ "$QUERY" = "look at painting" ]; then
+if [ "$ROOMID" = "5" ]; then
+echo "On the wall of the cafe, is some art of a quite-thicc spider girl."
+echo "She has what appears to be a human-like torso, head, and arms, but the rest of" 
+echo "her is a large spider."
+echo "Underneath the art, written on a plaque on the frame, are the words"
+echo "'game engine art test'. Huh."
+echo "
+                                            /(((((#                            
+                                           %%(((#((#                           
+                                     ((((%//(**,..##                           
+                                     %(#%%,.(,...*&%%%.                        
+                                         /.*(***(,*&%.                         
+                        .@@&(#(((#(,    ,.*.*(,*,/                           
+                      (@@@(@@%((#@@@@##&   /**%%%**.                           
+                      @@@@@@@@@@@@@@@@@@@  *.*##%#                             
+                     @@@@@@@@@@@@@@@@%&@@(&%@,../.,%@@@@                       
+                      @@@@@@@@@@@@%@@%@@@@&@@@((((@@@  @@                      
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@    @                      
+                         @@@@@@@@@@@@@@%@@@@@@    @,    @                      
+                            #@*@@@@,@@ %@ @@      @,    @                      
+                             &@ .@  @@. @ @&(@    @     @                      
+                              #& /(  %#   &                                    ";
   PRINTINFO=0
 fi
 fi
