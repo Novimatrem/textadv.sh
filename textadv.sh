@@ -37,6 +37,30 @@ echo ""
 exit
 fi
 
+if [ "$CHARWIDTH" -ge "81" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 80 characters wide so the game fits."
+echo "It's currently $CHARWIDTH :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+echo "Closing."
+echo ""
+exit
+fi
+
+if [ "$CHARHEIGHT" -ge "25" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 24 characters high so the game fits."
+echo "It's currently $CHARHEIGHT :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+echo "Closing."
+echo ""
+exit
+fi
+
 # Ensure the window is the correct size.
 clear
 sleep 0.166s
@@ -127,6 +151,24 @@ echo ""
 echo "ERROR:"
 echo "Please resize your Terminal to be 24 characters high so the game fits."
 echo "It's currently only $CHARHEIGHT :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+fi
+
+if [ "$CHARWIDTH" -ge "81" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 80 characters wide so the game fits."
+echo "It's currently $CHARWIDTH :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+fi
+
+if [ "$CHARHEIGHT" -ge "25" ]; then
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 24 characters high so the game fits."
+echo "It's currently $CHARHEIGHT :("
 echo "The Terminal size ideal for the game is 80x24"
 echo ""
 fi
