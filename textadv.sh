@@ -125,7 +125,7 @@ WGPLAYERCURRENTWEIGHT=130
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v12, wg system alpha"
+echo "VERSION: v13, wg system alpha 2"
 echo ""
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
@@ -181,6 +181,8 @@ fi
 
 # wg system
 WGPLAYERWEIGHTHIGHCAP=2601
+WGPLAYERWEIGHTZOEYMATCH=716
+WGPLAYERWEIGHTZOEYSONAMATCH=1863
 WGPLAYERWEIGHTLOWCAP=129
 WGPLAYERCURRENTWEIGHT=$(echo $WGPLAYERCURRENTWEIGHT)
 WGPLAYERWEIGHTSYMBOL=lbs
@@ -191,7 +193,71 @@ WEIGHTRANK4="obese."
 WEIGHTRANK5="morbidly obese."
 WEIGHTRANK6="very severely obese."
 WEIGHTRANK7="extremely heavily severely morbidly obese."
-# WIP: ^ set these ranks up soon ^
+
+
+
+# Checks for weight bounds
+if ((WGPLAYERCURRENTWEIGHT >= 129 && WGPLAYERCURRENTWEIGHT <= 130)); then
+  WEIGHTRANKTODISPLAY="$(echo $WEIGHTRANK1)"
+fi
+
+if ((WGPLAYERCURRENTWEIGHT <= 129)); then
+  WEIGHTRANKTODISPLAY="$(echo $WEIGHTRANK1)" && WGPLAYERCURRENTWEIGHT=129
+fi
+
+
+# Start with the gained weights, ported from old game
+
+# VERY WIP
+
+
+if ((WGPLAYERCURRENTWEIGHT >= 140 && WGPLAYERCURRENTWEIGHT <= 169)); then
+  WEIGHTRANKTODISPLAY="$(echo $WEIGHTRANK2)"
+fi
+
+if ((WGPLAYERCURRENTWEIGHT >= 170 && WGPLAYERCURRENTWEIGHT <= 180)); then
+  WEIGHTRANKTODISPLAY="$(echo $WEIGHTRANK3)"
+fi
+
+# etc etc, port from the old batch:
+
+
+#
+#
+#if %weight% LEQ 1400 set WEIGHTRANKING=%weightrankSECRET%
+#
+#if %weight% LEQ 1064 set WEIGHTRANKING=%weightrankSECRET%
+#
+#if %weight% LEQ 771 set WEIGHTRANKING=%weightrankSECRET%
+#
+#if %weight% LEQ 759 set WEIGHTRANKING=%weightranksob%
+#
+#if %weight% LEQ 300 set WEIGHTRANKING=%weightranksob%
+#
+#if %weight% LEQ 290 set WEIGHTRANKING=%weightrank5%
+#
+#if %weight% LEQ 270 set WEIGHTRANKING=%weightrank5%
+#
+#if %weight% LEQ 240 set WEIGHTRANKING=%weightrank4%
+#
+#if %weight% LEQ 210 set WEIGHTRANKING=%weightrank3%
+#
+#if %weight% LEQ 190 set WEIGHTRANKING=%weightrank2%
+#
+#if %weight% LEQ 170 set WEIGHTRANKING=%weightrank1%
+#
+#if %weight% LEQ 159 set WEIGHTRANKING=%weightrankerrorlow%
+#
+#
+
+
+# /End of the set weights
+
+# Max cap
+if ((WGPLAYERCURRENTWEIGHT >= 2601)); then
+  WEIGHTRANKTODISPLAY="$(echo $WEIGHTRANK7)" && WGPLAYERCURRENTWEIGHT=2601
+fi
+
 
 # Set the scene based on what we know, if it's the time we do that.
 
@@ -372,6 +438,7 @@ fi
 
 if [ "$QUERY" = "dev checkweight" ]; then
   echo "WGPLAYERCURRENTWEIGHT:" && echo $WGPLAYERCURRENTWEIGHT;
+  echo "DEBUGThis makes you:" && echo $WEIGHTRANKTODISPLAY;
   PRINTINFO=0
 fi
 
@@ -380,8 +447,14 @@ if [ "$QUERY" = "dev gainweight" ]; then
   read -p "NUM? " DEBUGPOUNDSGAIN
   echo "Gaining $DEBUGPOUNDSGAIN lb(s)..."
   WGPLAYERCURRENTWEIGHT=$((WGPLAYERCURRENTWEIGHT + $DEBUGPOUNDSGAIN))
-  echo "Now it's:"
-  echo "WGPLAYERCURRENTWEIGHT:" && echo $WGPLAYERCURRENTWEIGHT;
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev setweight" ]; then
+  echo "Enter number:"
+  read -p "NUM? " DEBUGPOUNDSGAIN
+  echo "Setting $DEBUGPOUNDSGAIN lb(s)..."
+  WGPLAYERCURRENTWEIGHT=$(($DEBUGPOUNDSGAIN))
   PRINTINFO=0
 fi
 
