@@ -119,7 +119,13 @@ PRINTINFO=1
 # Set all inventory items as you wish them.
 EATENCAKE=0
 DRANKMILKSHAKE=0
+
+# Initial variable
+WGPLAYERCURRENTWEIGHT=130
+
 # Begin what the user experiences
+echo ""
+echo "VERSION: v12, wg system alpha"
 echo ""
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
@@ -173,6 +179,20 @@ echo "The Terminal size ideal for the game is 80x24"
 echo ""
 fi
 
+# wg system
+WGPLAYERWEIGHTHIGHCAP=2601
+WGPLAYERWEIGHTLOWCAP=129
+WGPLAYERCURRENTWEIGHT=$(echo $WGPLAYERCURRENTWEIGHT)
+WGPLAYERWEIGHTSYMBOL=lbs
+WEIGHTRANK1="normal weight."
+WEIGHTRANK2="fat."
+WEIGHTRANK3="overweight."
+WEIGHTRANK4="obese."
+WEIGHTRANK5="morbidly obese."
+WEIGHTRANK6="very severely obese."
+WEIGHTRANK7="extremely heavily severely morbidly obese."
+# WIP: ^ set these ranks up soon ^
+
 # Set the scene based on what we know, if it's the time we do that.
 
 # ROOMID 5, Cafe -------------------------------------------------#
@@ -225,6 +245,7 @@ if [ "$EATENCAKE" = "0" ]; then
   echo "You eat the cake, yum!";
   PRINTINFO=0
   EATENCAKE=1
+  WGPLAYERCURRENTWEIGHT=$((WGPLAYERCURRENTWEIGHT + 1))
 fi
 fi
 fi
@@ -260,6 +281,7 @@ if [ "$DRANKMILKSHAKE" = "0" ]; then
   echo "You drink the milkshake, nice!";
   PRINTINFO=0
   DRANKMILKSHAKE=1
+  WGPLAYERCURRENTWEIGHT=$((WGPLAYERCURRENTWEIGHT + 1))
 fi
 fi
 fi
@@ -345,6 +367,21 @@ fi
 
 if [ "$QUERY" = "dev roomid" ]; then
   echo "ROOMID:" && echo $ROOMID;
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev checkweight" ]; then
+  echo "WGPLAYERCURRENTWEIGHT:" && echo $WGPLAYERCURRENTWEIGHT;
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev gainweight" ]; then
+  echo "Enter number:"
+  read -p "NUM? " DEBUGPOUNDSGAIN
+  echo "Gaining $DEBUGPOUNDSGAIN lb(s)..."
+  WGPLAYERCURRENTWEIGHT=$((WGPLAYERCURRENTWEIGHT + $DEBUGPOUNDSGAIN))
+  echo "Now it's:"
+  echo "WGPLAYERCURRENTWEIGHT:" && echo $WGPLAYERCURRENTWEIGHT;
   PRINTINFO=0
 fi
 
