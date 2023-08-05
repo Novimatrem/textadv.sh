@@ -1,5 +1,7 @@
 # textadv.sh
 
+[![textadv.sh logo](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/textadv-logo-shadow.png)](https://gitlab.com/Novimatrem/textadv.sh)  
+
 work in progress
 
 # how to (win)
