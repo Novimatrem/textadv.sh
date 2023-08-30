@@ -119,13 +119,14 @@ PRINTINFO=1
 # Set all inventory items as you wish them.
 EATENCAKE=0
 DRANKMILKSHAKE=0
+EATENPAINTING=0
 
 # Initial variable
 WGPLAYERCURRENTWEIGHT=130
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v16, stability + testing improvements"
+echo "VERSION: v17, the most important update"
 echo ""
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
@@ -425,6 +426,26 @@ echo "
                              &@ .@  @@. @ @&(@    @     @                      
                               #& /(  %#   &                                    ";
   PRINTINFO=0
+fi
+fi
+
+if [ "$QUERY" = "eat painting" ]; then
+if [ "$ROOMID" = "5" ]; then
+if [ "$EATENPAINTING" = "1" ]; then
+  echo "You remember the fabric and wood and how it felt on your tounge. You decide not to try again.";
+  EATENPAINTING=1
+fi
+fi
+fi
+
+if [ "$QUERY" = "eat painting" ]; then
+if [ "$ROOMID" = "5" ]; then
+if [ "$EATENPAINTING" = "0" ]; then
+  echo "Your intrusive thoughts won. The canvas tastes horribly dry and the texture is  very rough. You let go of the painting after one bite and scratch the taste off your tounge.";
+  PRINTINFO=0
+  EATENPAINTING=1
+  WGPLAYERCURRENTWEIGHT=$((WGPLAYERCURRENTWEIGHT + 1))
+fi
 fi
 fi
 
