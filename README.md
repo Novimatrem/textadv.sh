@@ -4,7 +4,7 @@
 
 work in progress
 
-# how to (win)
+# how to (win10)
 
 Run the following commands inside of Git Bash in order to download and start the game.
 

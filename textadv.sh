@@ -125,7 +125,7 @@ WGPLAYERCURRENTWEIGHT=130
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v13, wg system alpha 3"
+echo "VERSION: v15, wg system alpha 3"
 echo ""
 echo -e "Welcome! Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
