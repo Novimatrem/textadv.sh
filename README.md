@@ -2,6 +2,8 @@
 
 [![textadv.sh logo](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/textadv-logo-noshadow.png)](https://gitlab.com/Novimatrem/textadv.sh)  
 
+v16
+
 work in progress
 
 # how to (win10)
