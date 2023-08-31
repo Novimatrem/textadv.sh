@@ -14,14 +14,16 @@ It requires Windows 10 build 17063 or later.
 
 Run the following commands inside of Git Bash in order to download and start the game.
 
-Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store).
+Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store, unless you are using LTSC, where the game has a launcher to download that Terminal for you.
 
 ```git clone https://gitlab.com/Novimatrem/textadv.sh```
 
 ```cd textadv.sh```
 
 ```cmd "/C run-win-zoey.bat"```
+
 (OR if you are on LTSC, this command instead:)
+
 ```cmd "/C run-win-LTSC-enterprise.bat"```
 
 # how to (linux)
