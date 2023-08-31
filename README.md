@@ -10,7 +10,7 @@ work in progress
 
 Run the following commands inside of Git Bash in order to download and start the game.
 
-Required dependencies are: Git Bash, and Microsoft's modern 'Windows Terminal'.
+Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store).
 
 ```git clone https://gitlab.com/Novimatrem/textadv.sh```
 
