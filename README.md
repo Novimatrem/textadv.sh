@@ -41,3 +41,5 @@ Required dependencies are: Bash, and a Terminal Emulator.
 # how to (mac)
 
 haha really
+
+no but seriously the only mac i have runs mac OS X 10.6 snow leopard, i will try to get it working another time because i do like that version of OS X, everything after it sucked tho so i won't support 10.7 lion or above sorry.
