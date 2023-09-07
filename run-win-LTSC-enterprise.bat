@@ -1,5 +1,5 @@
 @echo off
-@title bash text adventure Launcher (Win10 LTSC) v20
+@title bash text adventure Launcher (Win10 LTSC) v21
 cls
 echo To run this game on Windows 10 LTSC, you require at least
 echo Windows 10 build 17063 or later.

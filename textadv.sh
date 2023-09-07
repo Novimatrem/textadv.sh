@@ -123,10 +123,12 @@ EATENPAINTING=0
 
 # Initial variable
 WGPLAYERCURRENTWEIGHT=130
+TURNCOUNTER=0
+TURNCOUNTER="$(($TURNCOUNTER + 0))" 
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v20"
+echo "VERSION: v21, turncounter added"
 echo ""
 echo -e "Welcome! Type '\e[1;32;4;1mcredits\e[0m' to see the developers/contributors."
 echo -e "Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
@@ -285,6 +287,13 @@ fi
 if ((WGPLAYERCURRENTWEIGHT >= 2601)); then
   WEIGHTRANKTODISPLAY="$(echo $WEIGHTRANK7)" && WGPLAYERCURRENTWEIGHT=2601
 fi
+
+
+# It's a whole new turn!
+
+TURNCOUNTER="$(($TURNCOUNTER + 1))" 
+
+# ---
 
 
 # Set the scene based on what we know, if it's the time we do that.
@@ -481,6 +490,11 @@ fi
 
 if [ "$QUERY" = "dev roomid" ]; then
   echo "ROOMID:" && echo $ROOMID;
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev turn" ]; then
+  echo "turn:" && echo $TURNCOUNTER;
   PRINTINFO=0
 fi
 
