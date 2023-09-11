@@ -38,6 +38,20 @@ Required dependencies are: Bash, and a Terminal Emulator.
 
 ```bash textadv.sh```
 
+# how to (haiku)
+
+Run the following commands inside of 'Terminal' in order, to download and start the game.
+
+Required dependencies are: bash, git. You can make sure you have them by searching for them in HaikuDepot. (look for Status: Active on them)
+
+```bash```
+
+```git clone https://gitlab.com/Novimatrem/textadv.sh```
+
+```cd textadv.sh```
+
+```bash textadv.sh```
+
 # how to (mac)
 
 haha really
