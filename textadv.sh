@@ -130,6 +130,8 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 echo ""
 echo "VERSION: v21, turncounter added"
 echo ""
+echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
+echo ""
 echo -e "Welcome! Type '\e[1;32;4;1mcredits\e[0m' to see the developers/contributors."
 echo -e "Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
