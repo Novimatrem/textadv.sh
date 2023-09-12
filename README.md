@@ -54,6 +54,7 @@ Required dependencies are: bash, git. You can make sure you have them by searchi
 
 # how to (mac)
 
-haha really
-
-no but seriously the only mac i have runs mac OS X 10.6 snow leopard, i will try to get it working another time because i do like that version of OS X, everything after it sucked tho so i won't support 10.7 lion or above sorry.
+Try as I might, I could not get the game working properly on the only Mac I have, which runs Mac OS X 10.6.8 Snow Leopard.
+Given I am only going to use that version of OS X at the highest, ever, because everything after it sucked, I won't be able to support Mac with this game.
+I could not get the colour codes used inside of the game to render on Mac, it was just spewing their code directly into the Terminal.
+If YOU know what I don't, and could offer insight into how to get it working, let me know, and I'd happily test it myself and then provide official instructions.
