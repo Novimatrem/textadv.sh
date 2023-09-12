@@ -6,6 +6,12 @@ v21
 
 work in progress
 
+# Platforms
+
+The game officially runs on Windows, Linux, & Haiku.
+
+If you have an operating system that isn't any of those, it could work, but you're on your own for getting it set up, and it may not function properly at all. Beware.
+
 # how to (win10)
 
 Game is only tested on the latest versions of Windows 10 and depends on it.
