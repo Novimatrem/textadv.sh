@@ -128,7 +128,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v21, turncounter added"
+echo "VERSION: v22, good improvements"
 echo ""
 echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
@@ -304,6 +304,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 1))"
 if [ "$ROOMID" = "5" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "You find yourself inside a cafe.";
+  echo "DEV NOTE: room is a cheerful catgirl's cafe/bakery, she is me, obviously, implement her, make particular mention of her cat ears, etc, she sells cakes, and bread. ITS NAME is blossom cafe"
   echo -e "You can see a side-door that's open to a sunny-looking \e[1;33;4;1mgarden\e[0m."
   if [ "$EATENCAKE" = "0" ]; then
   echo -e "There is a \e[1;34;4;1mcake\e[0m.";
