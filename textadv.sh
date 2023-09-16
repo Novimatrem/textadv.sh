@@ -128,7 +128,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v22, good improvements"
+echo "VERSION: v23, add pixels for future art"
 echo ""
 echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
@@ -591,6 +591,23 @@ if [ "$QUERY" = "credits" ]; then
   echo "Engine and text by Novimatrem"
   echo "Additional text by Lachtigall"
   echo ""
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev bcharart pixels" ]; then
+  PRINTINFO=0
+  clear
+  echo Test of the art system. Pixels.
+  echo ""
+  echo "-----------------------------"
+  echo ""
+  echo -e "Set 1: |\e[40m \e[0m\e[41m \e[0m\e[42m \e[0m\e[43m \e[0m\e[44m \e[0m\e[45m \e[0m\e[46m \e[0m\e[47m \e[0m\e[48m|"
+  echo ""
+  echo -e "Set 2: |\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m|"
+  echo ""
+  echo "-----------------------------"
+  echo ""
+  echo "Pretty cool, huh?"
   PRINTINFO=0
 fi
 
