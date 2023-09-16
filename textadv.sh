@@ -129,7 +129,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v24, dev help stuff"
+echo "VERSION: v24.1, dev help stuff (+ art help stuff)"
 echo ""
 echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
@@ -633,9 +633,11 @@ if [ "$QUERY" = "dev bcharart pixels" ]; then
   echo ""
   echo -e "Set 2: |\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m|"
   echo ""
+  echo "Only use ONE SET per image. Not both."
+  echo "Ideally ONLY USE set 2, because set 1 colours don't render on all platforms and it falls back to using set 2 instead, anyway."
+  echo ""
   echo "-----------------------------"
   echo ""
-  echo "Pretty cool, huh?"
   PRINTINFO=0
 fi
 
