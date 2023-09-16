@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# v23
+# v24
 
 # because i keep trying to type start.sh for some reason.
 

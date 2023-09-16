@@ -7,6 +7,7 @@ clear
 #Set title of cmd window
 echo -ne "\e]0;bash text adventure\a"
 
+qsim=?
 # Check we are the right size to play.
 CHARWIDTH="$(tput cols)"
 CHARHEIGHT="$(tput lines)"
@@ -128,7 +129,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v23, add pixels for future art"
+echo "VERSION: v24, dev help stuff"
 echo ""
 echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
@@ -333,7 +334,7 @@ fi
 # Now ask.
 echo ""
 PRINTINFO=0
-read -p "? " QUERY
+read -p "$qsim " QUERY
 
 # Compare with all available options.
 if [ "$QUERY" = "eat cake" ]; then
@@ -492,22 +493,26 @@ if [ "$QUERY" = "" ]; then
 fi
 
 if [ "$QUERY" = "dev roomid" ]; then
+  qsim=devcheats?
   echo "ROOMID:" && echo $ROOMID;
   PRINTINFO=0
 fi
 
 if [ "$QUERY" = "dev turn" ]; then
+  qsim=devcheats?
   echo "turn:" && echo $TURNCOUNTER;
   PRINTINFO=0
 fi
 
 if [ "$QUERY" = "dev checkweight" ]; then
+  qsim=devcheats?
   echo "WGPLAYERCURRENTWEIGHT:" && echo $WGPLAYERCURRENTWEIGHT;
   echo "DEBUGThis makes you:" && echo $WEIGHTRANKTODISPLAY;
   PRINTINFO=0
 fi
 
 if [ "$QUERY" = "dev gainweight" ]; then
+  qsim=devcheats?
   echo "Enter number:"
   read -p "NUM? " DEBUGPOUNDSGAIN
   echo "Gaining $DEBUGPOUNDSGAIN lb(s)..."
@@ -516,6 +521,7 @@ if [ "$QUERY" = "dev gainweight" ]; then
 fi
 
 if [ "$QUERY" = "dev setweight" ]; then
+  qsim=devcheats?
   echo "Enter number:"
   read -p "NUM? " DEBUGPOUNDSGAIN
   echo "Setting $DEBUGPOUNDSGAIN lb(s)..."
@@ -594,7 +600,29 @@ if [ "$QUERY" = "credits" ]; then
   PRINTINFO=0
 fi
 
+if [ "$QUERY" = "dev cols" ]; then
+  qsim=devcheats?
+  tput cols
+  echo ""
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev lines" ]; then
+  qsim=devcheats?
+  tput lines
+  echo ""
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev rows" ]; then
+  qsim=devcheats?
+  tput lines
+  echo ""
+  PRINTINFO=0
+fi
+
 if [ "$QUERY" = "dev bcharart pixels" ]; then
+  qsim=devcheats?
   PRINTINFO=0
   clear
   echo Test of the art system. Pixels.
@@ -609,6 +637,11 @@ if [ "$QUERY" = "dev bcharart pixels" ]; then
   echo ""
   echo "Pretty cool, huh?"
   PRINTINFO=0
+fi
+
+# So I do not accidentally get confused by issues I have created by cheating
+if [[ $QUERY == *"dev"* ]]; then
+  qsim=devcheats?
 fi
 
 # This entire game is a biig loop.
