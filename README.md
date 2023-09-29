@@ -2,7 +2,7 @@
 
 [![textadv.sh logo](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/textadv-logo-noshadow.png)](https://gitlab.com/Novimatrem/textadv.sh)  
 
-v25
+v25.1
 
 work in progress
 
@@ -11,6 +11,9 @@ work in progress
 The game officially runs on Windows 10, Linux, & Haiku.
 
 If you have an operating system that isn't any of those, it could work, but you're on your own for getting it set up, and it may not function properly at all. Beware.
+
+# Includes pixel art!
+[![pixel art of a fox](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/v25-dot-1-art-update-final-fox.png)](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/v25-dot-1-art-update-final-fox.png)  
 
 # how to (win10)
 

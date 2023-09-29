@@ -163,11 +163,11 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v25, the art update"
+echo "VERSION: v25.1, the art update + fixes"
 echo ""
 echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
-  echo -e "Set 2 is: |\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m|"
+  echo -e "Set 2 is: |\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m| - For some cool art, type: dev bcharart foxtest"
   echo ""
 echo -e "Welcome! Type '\e[1;32;4;1mcredits\e[0m' to see the developers/contributors."
 echo -e "Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
