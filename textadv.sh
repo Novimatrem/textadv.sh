@@ -3,7 +3,8 @@
 cd "$(dirname "$0")"
 # Clear screen
 clear
-
+bash bag-art-convert.sh
+clear
 #Set title of cmd window
 echo -ne "\e]0;bash text adventure\a"
 
@@ -68,7 +69,28 @@ sleep 0.166s
 echo ""
 echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem"
 echo ""
-read -rsp $'Press Enter to start!\n\n'
+
+# skip cali because dev?
+echo "Skip calibration because you're a developer doing testing? (y/n)"
+read skipcosdev
+if [[ $skipcosdev == y* ]]; then
+    qsim=devcheats?
+    echo "hi zoey"
+    echo "Will skip to main game."
+else
+    :
+fi
+
+echo ""
+if [[ $skipcosdev == y* ]]; then
+    qsim=devcheats?
+    echo "skipping."
+else
+    clear && echo && echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem" && echo "" && read -rsp $'Press Enter to start the game!\n'
+fi
+
+
+
 clear
 sleep 0.166s
 echo ""
@@ -77,7 +99,11 @@ echo "The letter o should be in each CORNER of your Terminal."
 echo "The test image should be a complete unbroken box, a border."
 echo ""
 echo "(Loading...)"
-sleep 11.5s
+if [[ $skipcosdev == y* ]]; then
+    echo "skip to main game"
+else
+    sleep 11.5s
+fi
 echo "(Loading...)"
 clear
 sleep 0.166s
@@ -106,11 +132,19 @@ echo -ne "|                                                                     
 echo -ne "|                                                                              |"
 echo -ne "|                                                                              |"
 echo -ne "o------------------------------------------------------------------------------o"
-sleep 9s
+if [[ $skipcosdev == y* ]]; then
+    echo "skip to main game"
+else
+    sleep 9s
+fi
 clear
 sleep 0.166s
 echo ""
-read -rsp $'Did the test image display correctly?\nIf so, Press Enter to continue...\n\nIF NOT, you need to resize your Terminal to be 80x24 characters, so the game\nfits. The Terminal size ideal for the game is 80x24.\nThat is 80 characters wide, and 24 characters high.\n\n(awaiting input) '
+if [[ $skipcosdev == y* ]]; then
+    echo "skip to main game"
+else
+    read -rsp $'Did the test image display correctly?\nIf so, Press Enter to continue...\n\nIF NOT, you need to resize your Terminal to be 80x24 characters, so the game\nfits. The Terminal size ideal for the game is 80x24.\nThat is 80 characters wide, and 24 characters high.\n\n(awaiting input) '
+fi
 clear
 sleep 0.166s
 
@@ -129,10 +163,12 @@ TURNCOUNTER="$(($TURNCOUNTER + 0))"
 
 # Begin what the user experiences
 echo ""
-echo "VERSION: v24.1, dev help stuff (+ art help stuff)"
+echo "VERSION: v25, the art update"
 echo ""
 echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
+  echo -e "Set 2 is: |\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m|"
+  echo ""
 echo -e "Welcome! Type '\e[1;32;4;1mcredits\e[0m' to see the developers/contributors."
 echo -e "Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work here."
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
@@ -332,7 +368,7 @@ fi
 #=================================================================#
 
 # Now ask.
-echo ""
+echo -e "\e[0m"
 PRINTINFO=0
 read -p "$qsim " QUERY
 
@@ -624,7 +660,6 @@ fi
 if [ "$QUERY" = "dev bcharart pixels" ]; then
   qsim=devcheats?
   PRINTINFO=0
-  clear
   echo Test of the art system. Pixels.
   echo ""
   echo "-----------------------------"
@@ -639,6 +674,19 @@ if [ "$QUERY" = "dev bcharart pixels" ]; then
   echo "-----------------------------"
   echo ""
   PRINTINFO=0
+fi
+
+
+if [ "$QUERY" = "dev bcharart foxtest" ]; then
+  qsim=devcheats?
+  PRINTINFO=0
+  echo "DEV: Displaying a fox for 5 seconds, in 3, 2, 1..."
+  sleep 3s
+  clear
+  echo -e "$(cat oldbagart.txt)"
+  sleep 5s
+  PRINTINFO=0
+  # YOU MUST RETURN TO THE INTERPRETER STRAIGHT AFTER SHOWING ART, OR IT BREAKS THE WHOLE GAME, WE CLEANUP THERE
 fi
 
 # So I do not accidentally get confused by issues I have created by cheating

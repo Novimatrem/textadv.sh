@@ -2,7 +2,7 @@
 
 [![textadv.sh logo](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/textadv-logo-noshadow.png)](https://gitlab.com/Novimatrem/textadv.sh)  
 
-v24
+v25
 
 work in progress
 
