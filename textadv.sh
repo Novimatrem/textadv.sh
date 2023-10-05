@@ -1,7 +1,7 @@
 #!/bin/bash
 # textadv.sh
 
-DEVFULLRELEASENAME="VERSION: v26 weight work + graphics fixes"
+DEVFULLRELEASENAME="VERSION: v26.1 weight+gfx fixes, haiku tools"
 
 cd "$(dirname "$0")"
 # Clear screen
