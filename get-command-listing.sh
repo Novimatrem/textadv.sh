@@ -1,5 +1,5 @@
 #!/bin/bash
-# v26.1
+# v27
 cd "$(dirname "$0")"
 rm -rf ./catme0
 rm -rf ./catme1

@@ -1,10 +1,19 @@
 #!/bin/bash
 # textadv.sh
 
-DEVFULLRELEASENAME="VERSION: v26.1 weight+gfx fixes, haiku tools"
+DEVFULLRELEASENAME="VERSION: v27 various fixes"
 
 cd "$(dirname "$0")"
-# Clear screen
+# Clear screen, set color
+force_color_prompt=yes
+setterm --inversescreen off
+setterm --clear
+tput clear
+tput cup 0 0
+setterm --background 0
+setterm --foreground 7
+setterm --bold on
+echo -e '\e[0;00m'
 clear
 bash bag-art-convert.sh
 clear
