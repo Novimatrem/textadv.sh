@@ -1241,11 +1241,8 @@ echo "The Terminal size ideal for the game is 80x24"
 echo ""
 exit
 fi
-  echo "DEV: Displaying a fox for 5 seconds, in 3, 2, 1..."
-  sleep 3s
   clear
   echo -e "$(cat oldbagart.txt)"
-  sleep 5s
   PRINTINFO=0
   # YOU MUST RETURN TO THE INTERPRETER STRAIGHT AFTER SHOWING ART, OR IT BREAKS THE WHOLE GAME, WE CLEANUP THERE
 fi
