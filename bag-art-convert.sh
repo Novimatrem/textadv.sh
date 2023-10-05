@@ -1,6 +1,8 @@
 # converts batch adventure game (bag/bagroom) bchar art to SET 2 textadv.sh art
 # unless you are zoey you will never need this
 
+# v26
+
 # cd to script dir
 cd "$(dirname "$0")"
 

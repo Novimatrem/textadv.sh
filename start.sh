@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# v25.1
+# v26
 
 # because i keep trying to type start.sh for some reason.
 
