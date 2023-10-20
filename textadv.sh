@@ -1,6 +1,13 @@
 #!/bin/bash
 # textadv.sh
 
+LANG=C
+LOCALE=C
+LC_ALL=C
+export LANG=C
+export LOCALE=C
+export LC_ALL=C
+
 DEVFULLRELEASENAME="VERSION: v27 various fixes"
 
 cd "$(dirname "$0")"
