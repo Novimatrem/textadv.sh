@@ -1,6 +1,9 @@
 #!/bin/bash
 # textadv.sh
 
+# DEV NOTE: add a neko catgirl maid to the game, make particular mention of her
+#  cat ears, tail, and other cat features, etc. her name is Evelyn.
+
 LANG=C
 LOCALE=C
 LC_ALL=C
@@ -8,7 +11,7 @@ export LANG=C
 export LOCALE=C
 export LC_ALL=C
 
-DEVFULLRELEASENAME="VERSION: v27 various fixes"
+DEVFULLRELEASENAME="VERSION: v28 important plan"
 
 cd "$(dirname "$0")"
 # Clear screen, set color
@@ -728,7 +731,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 1))"
 if [ "$ROOMID" = "5" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "You find yourself inside a cafe.";
-  echo "DEV NOTE: room is a cheerful catgirl's cafe/bakery, she is me, obviously, implement her, make particular mention of her cat ears, etc, she sells cakes, and bread. ITS NAME is blossom cafe"
+  echo "DEV NOTE: add a neko catgirl maid to the game, make particular mention of her   cat ears, tail, and other cat features, etc. her name is Evelyn."
   echo -e "You can see a side-door that's open to a sunny-looking \e[1;33;4;1mgarden\e[0m."
   if [ "$EATENCAKE" = "0" ]; then
   echo -e "There is a \e[1;34;4;1mcake\e[0m.";

@@ -1,6 +1,6 @@
 @echo off
 cls
-@title bash text adventure Launcher (Win10) v27
+@title bash text adventure Launcher (Win10) v28
 cd /D "%~dp0"
 REM the pings are just for timeout/sleep, a small wait
 @ping -n 2 -w 1000 0.0.0.1 > NUL 
