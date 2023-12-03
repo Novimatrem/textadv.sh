@@ -1,6 +1,12 @@
 #!/bin/bash
 # textadv.sh
 
+
+# NOTABLE DEV NOTE: make an auto-updater for the game, that works on both Win and Lin.
+# make it nuke all the files, and fully download a new version fresh.
+# because then, mon amour will have a much happier better time working on this with me.
+
+
 # DEV NOTE: add a neko catgirl maid to the game, make particular mention of her
 #  cat ears, tail, and other cat features, etc. her name is Evelyn.
 
@@ -11,7 +17,7 @@ export LANG=C
 export LOCALE=C
 export LC_ALL=C
 
-DEVFULLRELEASENAME="VERSION: v28 important plan"
+DEVFULLRELEASENAME="VERSION: v28.1 important notes"
 
 cd "$(dirname "$0")"
 # Clear screen, set color
