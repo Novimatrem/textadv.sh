@@ -6,6 +6,14 @@ v28
 
 work in progress
 
+# Todo
+
+- Make an auto-updater for the game
+
+...
+
+- Many, many other things not listed here.
+
 # Platforms
 
 The game officially runs on Windows 10, Linux, & Haiku.
