@@ -14,20 +14,24 @@
 #
 # she is white.
 #
-# she has red (as in, apple, not ginger) hair [as in, around #9a4447] which flows down her back to around butt level, but 
-# also surrounds her face, flowing down to just below shoulder level, green eyes, a collar with bell, cat ears with fluff.
+# she has red (as in, apple, not ginger) hair [as in, around #9a4447] which flows down her back to around butt level
+# and also surrounds her face, flowing down to just below shoulder level, green eyes, 
+# a collar with bell, cat ears with fluff.
 #
 # a little adorable red bow under her collar, too.
 #
 # she loves headpats. she's 23, like me.
 #
-# she's positive and happy generally, unless it's appropriate that she not be. not overly so, she's just good mindset. smiles often.
+# she is 5 foot 4.
+#
+# she's positive and happy generally, unless it's appropriate that she not be. 
+# not overly so, she's just good mindset. smiles often.
 # 
 # of course she wears the traditional maid dress.
 #
 # get real HD art of her commissioned some day, based on the descriptions you will write for her in the game.
 #
-# =====================================================================================================================================
+# =====================================================================================================================
 
 LANG=C
 LOCALE=C
