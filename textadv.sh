@@ -6,9 +6,28 @@
 # make it nuke all the files, and fully download a new version fresh.
 # because then, mon amour will have a much happier better time working on this with me.
 
-
+# Character #1
+# Evelyn:
+#
 # DEV NOTE: add a neko catgirl maid to the game, make particular mention of her
 #  cat ears, tail, and other cat features, etc. her name is Evelyn.
+#
+# she is white.
+#
+# she has red (as in, apple, not ginger) hair [as in, around #9a4447] which flows down her back to around butt level, but 
+# also surrounds her face, flowing down to just below shoulder level, green eyes, a collar with bell, cat ears with fluff.
+#
+# a little adorable red bow under her collar, too.
+#
+# she loves headpats. she's 23, like me.
+#
+# she's positive and happy generally, unless it's appropriate that she not be. not overly so, she's just good mindset. smiles often.
+# 
+# of course she wears the traditional maid dress.
+#
+# get real HD art of her commissioned some day, based on the descriptions you will write for her in the game.
+#
+# =====================================================================================================================================
 
 LANG=C
 LOCALE=C
@@ -737,7 +756,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 1))"
 if [ "$ROOMID" = "5" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "You find yourself inside a cafe.";
-  echo "DEV NOTE: add a neko catgirl maid to the game, make particular mention of her   cat ears, tail, and other cat features, etc. her name is Evelyn."
+  echo "DEV NOTE: see dev note at top of script for her."
   echo -e "You can see a side-door that's open to a sunny-looking \e[1;33;4;1mgarden\e[0m."
   if [ "$EATENCAKE" = "0" ]; then
   echo -e "There is a \e[1;34;4;1mcake\e[0m.";
