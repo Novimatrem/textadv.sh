@@ -24,6 +24,10 @@
 #
 # she is 5 foot 4.
 #
+# she's not fat. 
+# you'd not even call her chubby. she isn't thin. but she's not too chubby at all. a healthy weight.
+# she's 135 lbs.
+#
 # she's positive and happy generally, unless it's appropriate that she not be. 
 # not overly so, she's just good mindset. smiles often.
 # 
