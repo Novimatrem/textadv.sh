@@ -18,6 +18,8 @@
 # and also surrounds her face, flowing down to just below shoulder level, green eyes, 
 # a collar with bell, cat ears with fluff.
 #
+# she has black cat whiskers.
+#
 # a little adorable red bow under her collar, too.
 #
 # she loves headpats. she's 23, like me.
@@ -44,7 +46,7 @@ export LANG=C
 export LOCALE=C
 export LC_ALL=C
 
-DEVFULLRELEASENAME="VERSION: v28.1 important notes"
+DEVFULLRELEASENAME="VERSION: v29 evelyn start"
 
 cd "$(dirname "$0")"
 # Clear screen, set color

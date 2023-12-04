@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# v28
+# v29
 
 cd "$(dirname "$0")"
 git pull
