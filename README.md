@@ -2,13 +2,13 @@
 
 [![textadv.sh logo](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/textadv-logo-noshadow.png)](https://gitlab.com/Novimatrem/textadv.sh)  
 
-v29
+v30
 
 work in progress
 
 # Todo
 
-- Make an auto-updater for the game
+- Stuff.
 
 ...
 

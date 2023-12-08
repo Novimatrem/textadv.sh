@@ -50,7 +50,7 @@ export LC_ALL=C
 UPDATESEQUENCE=0
 export UPDATESEQUENCE=0
 
-DEVFULLRELEASENAME="VERSION: v29 evelyn start"
+DEVFULLRELEASENAME="VERSION: v30 now with updater"
 
 cd "$(dirname "$0")"
 # Clear screen, set color
