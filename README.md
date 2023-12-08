@@ -76,4 +76,4 @@ Given I am only going to use that version of OS X at the highest, ever, because 
 I could not get the colour codes used inside of the game to render on Mac, it was just spewing their code directly into the Terminal.
 If YOU know what I don't, and could offer insight into how to get it working, let me know, and I'd happily test it myself and then provide official instructions.
 
-# The game currently lacks an updater. To update the game to the latest version, simply delete the game's folder, and follow these steps again from the start.
+# The game has an updater. To update the game to the latest version, simply run the following command when in-game: dev update
