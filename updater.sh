@@ -57,6 +57,7 @@ rm -rf run-win-zoey.bat
 rm -rf start.sh
 rm -rf textadv.sh
 rm -rf updater.sh
+rm -rf .git
 rm -rf ../update-process
 # /duki nuki
 
