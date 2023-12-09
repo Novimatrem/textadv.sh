@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# v30
+# v31
 
 cd "$(dirname "$0")"
 /boot/system/Tracker .

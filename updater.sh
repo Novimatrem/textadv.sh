@@ -1,5 +1,5 @@
 #!/bin/bash
-# updater.sh v30
+# updater.sh v31
 # Please run the updater from in-game with the command: dev update
 
 # This product is licensed under the GNU GPL v3.0.
