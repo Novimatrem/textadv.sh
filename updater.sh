@@ -95,12 +95,10 @@ rm -rf update-process
 # and now we do it again to ensure that the newly updated updater's new file index is downloaded.
 # this means i can add NEW FILES on the fly without having to have anyone redownload.
 
-cd "$(dirname "$0")"
 
 # Yes, I'm doing this like this, programmer friend. I'm being very careful. Purposefully.
 
 # duki nuki
-cd "$(dirname "$0")"
 echo "Working..."
 rm -rf bag-art-convert.sh
 rm -rf edit-script-haiku.sh
@@ -113,7 +111,7 @@ rm -rf README.md
 rm -rf run-win-LTSC-enterprise.bat
 rm -rf run-win-zoey.bat
 rm -rf start.sh
-rm -rf textadv.sh
+#rm -rf textadv.sh NOPE NOT THIS TIME
 rm -rf updater.sh
 rm -rf .git
 rm -rf ../update-process
@@ -121,11 +119,18 @@ rm -rf ../update-process
 
 # download
 cd ..
+mkdir textadv.sh
+cd textadv.sh
 mkdir update-process
 cd update-process
 git clone https://gitlab.com/Novimatrem/textadv.sh
 cd textadv.sh
 unalias cp
+
+
+echo ZOEY WE ARE HERE
+pwd
+sleep 3s
 
 # HERE IS THE WRITE
 
@@ -162,4 +167,3 @@ export UPDATESEQUENCE=0
 exit
 
 # EOF
-
