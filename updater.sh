@@ -54,6 +54,7 @@ rm -rf gpgf.sh
 rm -rf oldbagart-origver.txt
 rm -rf testfile-garbage-ignore.txt
 rm -rf testfile-garbage-ignore2.txt
+rm -rf testfile-garbage-ignore3.txt
 rm -rf oldbagart.txt
 rm -rf open-dir-haiku.sh
 rm -rf README.md
@@ -85,6 +86,7 @@ yes | cp -rf gpgf.sh ../../textadv.sh/gpgf.sh
 yes | cp -rf oldbagart-origver.txt ../../textadv.sh/oldbagart-origver.txt
 yes | cp -rf testfile-garbage-ignore.txt ../../textadv.sh/testfile-garbage-ignore.txt
 yes | cp -rf testfile-garbage-ignore2.txt ../../textadv.sh/testfile-garbage-ignore2.txt
+yes | cp -rf testfile-garbage-ignore3.txt ../../textadv.sh/testfile-garbage-ignore3.txt
 yes | cp -rf oldbagart.txt ../../textadv.sh/oldbagart.txt
 yes | cp -rf open-dir-haiku.sh ../../textadv.sh/open-dir-haiku.sh
 yes | cp -rf README.md ../../textadv.sh/README.md
@@ -116,6 +118,7 @@ rm -rf gpgf.sh
 rm -rf oldbagart-origver.txt
 rm -rf testfile-garbage-ignore.txt
 rm -rf testfile-garbage-ignore2.txt
+rm -rf testfile-garbage-ignore3.txt
 rm -rf oldbagart.txt
 rm -rf open-dir-haiku.sh
 rm -rf README.md
@@ -157,6 +160,7 @@ yes | cp -rf gpgf.sh ../../gpgf.sh
 yes | cp -rf oldbagart-origver.txt ../../oldbagart-origver.txt
 yes | cp -rf testfile-garbage-ignore.txt ../../testfile-garbage-ignore.txt
 yes | cp -rf testfile-garbage-ignore2.txt ../../testfile-garbage-ignore2.txt
+yes | cp -rf testfile-garbage-ignore3.txt ../../testfile-garbage-ignore3.txt
 yes | cp -rf oldbagart.txt ../../oldbagart.txt
 yes | cp -rf open-dir-haiku.sh ../../open-dir-haiku.sh
 yes | cp -rf README.md ../../README.md
