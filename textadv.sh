@@ -1228,11 +1228,12 @@ echo "To update the game, type y"
 echo "This will delete the installed version entirely and replace it with the newest."
 echo "To not, close this Terminal window now."
 echo ""
+cd "$(dirname "$0")"
 sleep 3s
 while true; do
     read -p "Update? (y) " yn
     case $yn in
-        [Yy]* ) UPDATESEQUENCE=1 && export UPDATESEQUENCE=1 && bash updater.sh; break;;
+        [Yy]* ) UPDATESEQUENCE=1 && export UPDATESEQUENCE=1 && rm -rf updater.sh && wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh && bash updater.sh; break;;
         * ) echo "Please answer.";;
     esac
 done

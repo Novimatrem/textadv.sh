@@ -39,6 +39,9 @@ echo "We are updating now."
 echo ""
 cd "$(dirname "$0")"
 
+rm -rf updater.sh
+wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
+
 # Yes, I'm doing this like this, programmer friend. I'm being very careful. Purposefully.
 
 # duki nuki
@@ -69,6 +72,8 @@ mkdir update-process
 cd update-process
 git clone https://gitlab.com/Novimatrem/textadv.sh
 cd textadv.sh
+rm -rf updater.sh
+wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 unalias cp
 
 # HERE IS THE WRITE
@@ -131,6 +136,8 @@ mkdir update-process
 cd update-process
 git clone https://gitlab.com/Novimatrem/textadv.sh
 cd textadv.sh
+rm -rf updater.sh
+wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 unalias cp
 
 
