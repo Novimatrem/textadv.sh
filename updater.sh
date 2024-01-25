@@ -130,7 +130,7 @@ unalias cp
 
 echo ZOEY WE ARE HERE
 pwd
-set -x
+set +x
 unalias ls
 ls
 sleep 3s
