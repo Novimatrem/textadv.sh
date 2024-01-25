@@ -130,6 +130,9 @@ unalias cp
 
 echo ZOEY WE ARE HERE
 pwd
+set -x
+unalias ls
+ls
 sleep 3s
 
 # HERE IS THE WRITE
