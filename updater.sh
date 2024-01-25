@@ -135,23 +135,23 @@ unalias ls
 ls
 sleep 3s
 
-# HERE IS THE WRITE
+# HERE IS THE WRITE 2
 
-yes | cp -rf bag-art-convert.sh ../../textadv.sh/bag-art-convert.sh
-yes | cp -rf edit-script-haiku.sh ../../textadv.sh/edit-script-haiku.sh
-yes | cp -rf get-command-listing.sh ../../textadv.sh/get-command-listing.sh
-yes | cp -rf gpgf.sh ../../textadv.sh/gpgf.sh
-yes | cp -rf oldbagart-origver.txt ../../textadv.sh/oldbagart-origver.txt
-yes | cp -rf oldbagart.txt ../../textadv.sh/oldbagart.txt
-yes | cp -rf open-dir-haiku.sh ../../textadv.sh/open-dir-haiku.sh
-yes | cp -rf README.md ../../textadv.sh/README.md
-yes | cp -rf run-win-LTSC-enterprise.bat ../../textadv.sh/run-win-LTSC-enterprise.bat
-yes | cp -rf run-win-zoey.bat ../../textadv.sh/run-win-zoey.bat
-yes | cp -rf start.sh ../../textadv.sh/start.sh
-yes | cp -rf ./textadv.sh ../../textadv.sh/textadv.sh
-yes | cp -rf updater.sh ../../textadv.sh/updater.sh
+yes | cp -rf bag-art-convert.sh ../../bag-art-convert.sh
+yes | cp -rf edit-script-haiku.sh ../../edit-script-haiku.sh
+yes | cp -rf get-command-listing.sh ../../get-command-listing.sh
+yes | cp -rf gpgf.sh ../../gpgf.sh
+yes | cp -rf oldbagart-origver.txt ../../oldbagart-origver.txt
+yes | cp -rf oldbagart.txt ../../oldbagart.txt
+yes | cp -rf open-dir-haiku.sh ../../open-dir-haiku.sh
+yes | cp -rf README.md ../../README.md
+yes | cp -rf run-win-LTSC-enterprise.bat ../../run-win-LTSC-enterprise.bat
+yes | cp -rf run-win-zoey.bat ../../run-win-zoey.bat
+yes | cp -rf start.sh ../../start.sh
+yes | cp -rf ./textadv.sh ../../textadv.sh
+yes | cp -rf updater.sh ../../updater.sh
 
-# /HERE IS THE WRITE
+# /HERE IS THE WRITE 2
 
 cd ..
 cd ..
