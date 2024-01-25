@@ -49,6 +49,7 @@ rm -rf edit-script-haiku.sh
 rm -rf get-command-listing.sh
 rm -rf gpgf.sh
 rm -rf oldbagart-origver.txt
+rm -rf testfile-garbage-ignore.txt
 rm -rf oldbagart.txt
 rm -rf open-dir-haiku.sh
 rm -rf README.md
@@ -76,6 +77,7 @@ yes | cp -rf edit-script-haiku.sh ../../textadv.sh/edit-script-haiku.sh
 yes | cp -rf get-command-listing.sh ../../textadv.sh/get-command-listing.sh
 yes | cp -rf gpgf.sh ../../textadv.sh/gpgf.sh
 yes | cp -rf oldbagart-origver.txt ../../textadv.sh/oldbagart-origver.txt
+yes | cp -rf testfile-garbage-ignore.txt ../../textadv.sh/testfile-garbage-ignore.txt
 yes | cp -rf oldbagart.txt ../../textadv.sh/oldbagart.txt
 yes | cp -rf open-dir-haiku.sh ../../textadv.sh/open-dir-haiku.sh
 yes | cp -rf README.md ../../textadv.sh/README.md
@@ -105,6 +107,7 @@ rm -rf edit-script-haiku.sh
 rm -rf get-command-listing.sh
 rm -rf gpgf.sh
 rm -rf oldbagart-origver.txt
+rm -rf testfile-garbage-ignore.txt
 rm -rf oldbagart.txt
 rm -rf open-dir-haiku.sh
 rm -rf README.md
@@ -142,6 +145,7 @@ yes | cp -rf edit-script-haiku.sh ../../edit-script-haiku.sh
 yes | cp -rf get-command-listing.sh ../../get-command-listing.sh
 yes | cp -rf gpgf.sh ../../gpgf.sh
 yes | cp -rf oldbagart-origver.txt ../../oldbagart-origver.txt
+yes | cp -rf testfile-garbage-ignore.txt ../../testfile-garbage-ignore.txt
 yes | cp -rf oldbagart.txt ../../oldbagart.txt
 yes | cp -rf open-dir-haiku.sh ../../open-dir-haiku.sh
 yes | cp -rf README.md ../../README.md
