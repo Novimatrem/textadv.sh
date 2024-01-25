@@ -92,6 +92,65 @@ cd ..
 rm -rf update-process
 
 
+# and now we do it again to ensure that the newly updated updater's new file index is downloaded.
+# this means i can add NEW FILES on the fly without having to have anyone redownload.
+
+cd "$(dirname "$0")"
+
+# Yes, I'm doing this like this, programmer friend. I'm being very careful. Purposefully.
+
+# duki nuki
+cd "$(dirname "$0")"
+echo "Working..."
+rm -rf bag-art-convert.sh
+rm -rf edit-script-haiku.sh
+rm -rf get-command-listing.sh
+rm -rf gpgf.sh
+rm -rf oldbagart-origver.txt
+rm -rf oldbagart.txt
+rm -rf open-dir-haiku.sh
+rm -rf README.md
+rm -rf run-win-LTSC-enterprise.bat
+rm -rf run-win-zoey.bat
+rm -rf start.sh
+rm -rf textadv.sh
+rm -rf updater.sh
+rm -rf .git
+rm -rf ../update-process
+# /duki nuki
+
+# download
+cd ..
+mkdir update-process
+cd update-process
+git clone https://gitlab.com/Novimatrem/textadv.sh
+cd textadv.sh
+unalias cp
+
+# HERE IS THE WRITE
+
+yes | cp -rf bag-art-convert.sh ../../textadv.sh/bag-art-convert.sh
+yes | cp -rf edit-script-haiku.sh ../../textadv.sh/edit-script-haiku.sh
+yes | cp -rf get-command-listing.sh ../../textadv.sh/get-command-listing.sh
+yes | cp -rf gpgf.sh ../../textadv.sh/gpgf.sh
+yes | cp -rf oldbagart-origver.txt ../../textadv.sh/oldbagart-origver.txt
+yes | cp -rf oldbagart.txt ../../textadv.sh/oldbagart.txt
+yes | cp -rf open-dir-haiku.sh ../../textadv.sh/open-dir-haiku.sh
+yes | cp -rf README.md ../../textadv.sh/README.md
+yes | cp -rf run-win-LTSC-enterprise.bat ../../textadv.sh/run-win-LTSC-enterprise.bat
+yes | cp -rf run-win-zoey.bat ../../textadv.sh/run-win-zoey.bat
+yes | cp -rf start.sh ../../textadv.sh/start.sh
+yes | cp -rf ./textadv.sh ../../textadv.sh/textadv.sh
+yes | cp -rf updater.sh ../../textadv.sh/updater.sh
+
+# /HERE IS THE WRITE
+
+cd ..
+cd ..
+rm -rf update-process
+
+
+
 
 echo ""
 echo "Done. Start the game again, it's the newest version now."
