@@ -59,6 +59,15 @@ export UPDATESEQUENCE=0
 # To help the logging system
 EVERREADY=0
 
+# updater workability test
+cd "$(dirname "$0")"
+UPDATECOMPAREPATH=$(basename "$PWD")
+UPDATECOMPAREPATHGREP=$(echo $UPDATECOMPAREPATH | grep main)
+if [ "$UPDATECOMPAREPATHGREP" = "textadv.sh-main" ]; then
+clear && echo "The game was installed incorrectly and will not function." && echo "Please follow the install instructions in README.md" && echo "" && exit
+fi
+
+
 # release number and name
 DEVFULLRELEASENAME="VERSION: v31 with debug logs"
 
@@ -202,7 +211,7 @@ if [[ $skipcosdev == y* ]]; then
     qsim=devcheats?
     echo "skipping."
 else
-    clear && echo && echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem" && echo "" && echo "$DEVFULLRELEASENAME" && echo "" && echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]". && echo "" && read -rsp $'Press Enter to start the game!\n'
+    clear && echo "$UPDATECOMPAREPATHGREP" && echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem" && echo "" && echo "$DEVFULLRELEASENAME" && echo "" && echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]". && echo "" && read -rsp $'Press Enter to start the game!\n'
 fi
 
 
