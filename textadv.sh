@@ -1233,7 +1233,7 @@ sleep 3s
 while true; do
     read -p "Update? (y) " yn
     case $yn in
-        [Yy]* ) UPDATESEQUENCE=1 && export UPDATESEQUENCE=1 && rm -rf updater.sh && wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh && bash updater.sh; break;;
+        [Yy]* ) UPDATESEQUENCE=1 && export UPDATESEQUENCE=1 && rm -rf updater.sh && curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh && bash updater.sh; break;;
         * ) echo "Please answer.";;
     esac
 done
