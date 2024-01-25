@@ -40,7 +40,7 @@ echo ""
 cd "$(dirname "$0")"
 
 rm -rf updater.sh
-wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
+curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 
 # Yes, I'm doing this like this, programmer friend. I'm being very careful. Purposefully.
 
@@ -76,7 +76,7 @@ cd update-process
 git clone https://gitlab.com/Novimatrem/textadv.sh
 cd textadv.sh
 rm -rf updater.sh
-wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
+curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 unalias cp
 
 # HERE IS THE WRITE
@@ -144,7 +144,7 @@ cd update-process
 git clone https://gitlab.com/Novimatrem/textadv.sh
 cd textadv.sh
 rm -rf updater.sh
-wget https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
+curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 unalias cp
 
 
