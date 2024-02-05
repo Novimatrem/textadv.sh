@@ -1293,6 +1293,29 @@ if [ "$QUERY" = "dev bcharart pixels" ]; then
   PRINTINFO=0
 fi
 
+if [ "$QUERY" = "ts" ]; then
+  clear
+  qsim=:
+  PRINTINFO=0
+echo "Hey, wake up!"
+cd "$(dirname "$0")"
+paplay zyou_were_poked.mp3
+  PRINTINFO=0
+fi
+
+
+if [ "$QUERY" = "mic" ]; then
+  clear
+  qsim=
+  PRINTINFO=0
+echo "🎤 Microphone muted! 🎤"
+echo ""
+echo "🎤"
+
+cd "$(dirname "$0")"
+paplay zmicrophone-muted-teamspeak.mp3
+  PRINTINFO=0
+fi
 
 if [ "$QUERY" = "dev bcharart foxtest" ]; then
   qsim=devcheats?
