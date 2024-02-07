@@ -7,10 +7,10 @@
 cd "$(dirname "$0")"
 
 #sed -i -e 's/abc/XYZ/g' filetoconv.txt
-clear
-echo start
-echo ""
-echo "converting batch adventure game (bag/bagroom) bchar art to SET 2 textadv.sh art."
+#clear
+#echo start
+#echo ""
+#echo "converting batch adventure game (bag/bagroom) bchar art to SET 2 textadv.sh art."
 
 touch oldbagart.txt
 
@@ -50,14 +50,14 @@ rm -rf oldbagart-temp.txt
 # fix missing slashes on some
 sed -i -e 's/ e/\\e/g' oldbagart.txt
 
-echo "Done."
-echo ""
+#echo "Done."
+#echo ""
 
-echo "NOTE: this only converts colours used in the one image i drew, it does not do   all of them."
-echo "it is not rocket science to extend it to the rest, though, obviously."
-echo ""
+#echo "NOTE: this only converts colours used in the one image i drew, it does not do   all of them."
+#echo "it is not rocket science to extend it to the rest, though, obviously."
+#echo ""
 
-echo end
+#echo end
 # EOF
 
 

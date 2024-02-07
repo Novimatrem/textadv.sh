@@ -44,6 +44,22 @@ cd "$(dirname "$0")"
 touch log.txt
 echo START User started game at $(date) >> log.txt
 
+# prep
+clear
+force_color_prompt=yes
+setterm --inversescreen off
+setterm --clear
+tput clear
+tput cup 0 0
+setterm --background 0
+setterm --foreground 7
+setterm --bold on
+echo -e '\e[0;00m'
+bash bag-art-convert.sh
+echo ""
+echo -e '\e[0;00m'
+clear
+
 # Lang same throughout whole game
 LANG=C
 LOCALE=C
@@ -69,10 +85,28 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="VERSION: v32 updater now awesome"
+DEVFULLRELEASENAME="VERSION: v32c updater now awesome"
 
 cd "$(dirname "$0")"
+clear
+
+# trans pride
+echo "Trans pride! (8-bit edition)"
+echo ""
+echo -e "\e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m              "
+echo -e "\e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m              "
+echo -e "\e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m              "
+echo -e "\e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m              "
+echo -e "\e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m              "
+echo -e "\e[0m\e[108m"
+echo "Launching..."
+echo ""
+# meow
+
+sleep 5s    
+    
 # Clear screen, set color
+clear
 force_color_prompt=yes
 setterm --inversescreen off
 setterm --clear
@@ -82,9 +116,12 @@ setterm --background 0
 setterm --foreground 7
 setterm --bold on
 echo -e '\e[0;00m'
-clear
 bash bag-art-convert.sh
+echo ""
+echo -e '\e[0;00m'
 clear
+echo -ne "\e]0;bash text adventure\a"
+read -rsp $'Press Enter to start bash text adventure...\n\n(awaiting input PRESS ENTER) '
 #Set title of cmd window
 echo -ne "\e]0;bash text adventure\a"
 
@@ -211,7 +248,7 @@ if [[ $skipcosdev == y* ]]; then
     qsim=devcheats?
     echo "skipping."
 else
-    clear && echo "$UPDATECOMPAREPATHGREP" && echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem" && echo "" && echo "$DEVFULLRELEASENAME" && echo "" && echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]". && echo "" && read -rsp $'Press Enter to start the game!\n'
+    clear && echo "$UPDATECOMPAREPATHGREP" && echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem" && echo "" && echo "$DEVFULLRELEASENAME" && echo "" && echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]". && echo "" && read -rsp $'Press Enter to begin the game!\n'
 fi
 
 
@@ -562,11 +599,7 @@ TURNCOUNTER=0
 TURNCOUNTER="$(($TURNCOUNTER + 0))" 
 
 # Begin what the user experiences
-echo "This game is still in heavy development. Be warned."
-echo ""
 echo $DEVFULLRELEASENAME
-echo ""
-echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]".
 echo ""
   echo -e "Set 2 is: |\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m| - For some cool art, type: dev bcharart foxtest"
   echo ""
@@ -575,6 +608,7 @@ echo -e "Regular text-adventure game commands like '\e[1;32;4;1mlook\e[0m' work 
 echo -e "Use '\e[1;32;4;1mlook\e[0m' to see the room, and '\e[1;34;4;1mlook at cake\e[0m' (example), to inspect an object."
 
 echo ""
+
 
 # DEBUG: SET ROOMID
 ROOMID=5
@@ -798,7 +832,6 @@ fi
 if [ "$ROOMID" = "5" ]; then
 if [ "$PRINTINFO" = "1" ]; then
   echo "You find yourself inside a cafe.";
-  echo "DEV NOTE: see dev note at top of script for her."
   echo -e "You can see a side-door that's open to a sunny-looking \e[1;33;4;1mgarden\e[0m."
   if [ "$EATENCAKE" = "0" ]; then
   echo -e "There is a \e[1;34;4;1mcake\e[0m.";
