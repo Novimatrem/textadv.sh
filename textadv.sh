@@ -85,7 +85,7 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="VERSION: v32c updater now awesome"
+DEVFULLRELEASENAME="VERSION: v32d easter egg sound fixes"
 
 cd "$(dirname "$0")"
 clear
@@ -1333,6 +1333,7 @@ if [ "$QUERY" = "ts" ]; then
 echo "Hey, wake up!"
 cd "$(dirname "$0")"
 paplay zyou_were_poked.mp3
+powershell -c "(New-Object Media.SoundPlayer %cd%/zyou_were_poked.mp3).PlaySync();" &
   PRINTINFO=0
 fi
 
@@ -1347,6 +1348,7 @@ echo "🎤"
 
 cd "$(dirname "$0")"
 paplay zmicrophone-muted-teamspeak.mp3
+powershell -c "(New-Object Media.SoundPlayer %cd%/zmicrophone-muted-teamspeak.mp3).PlaySync();" &
   PRINTINFO=0
 fi
 
