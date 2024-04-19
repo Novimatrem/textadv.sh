@@ -85,7 +85,7 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="VERSION: v32d easter egg sound fixes"
+DEVFULLRELEASENAME="VERSION: v32e easter egg sound fixes v2"
 
 cd "$(dirname "$0")"
 clear
@@ -1333,8 +1333,11 @@ if [ "$QUERY" = "ts" ]; then
 echo "Hey, wake up!"
 cd "$(dirname "$0")"
 paplay zyou_were_poked.mp3
-powershell -c "(New-Object Media.SoundPlayer %cd%/zyou_were_poked.mp3).PlaySync();" &
+powershell -c "pwd"
+powershell -c "(New-Object Media.SoundPlayer zyou_were_poked.wav).PlaySync();" &
   PRINTINFO=0
+  clear
+  echo "Hey, wake up!"
 fi
 
 
@@ -1348,8 +1351,13 @@ echo "🎤"
 
 cd "$(dirname "$0")"
 paplay zmicrophone-muted-teamspeak.mp3
-powershell -c "(New-Object Media.SoundPlayer %cd%/zmicrophone-muted-teamspeak.mp3).PlaySync();" &
+powershell -c "pwd"
+powershell -c "(New-Object Media.SoundPlayer zmicrophone-muted-teamspeak.wav).PlaySync();" &
   PRINTINFO=0
+  clear
+  echo "🎤 Microphone muted! 🎤"
+	echo ""
+
 fi
 
 if [ "$QUERY" = "dev bcharart foxtest" ]; then
