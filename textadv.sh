@@ -85,25 +85,31 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="VERSION: v32e easter egg sound fixes v2"
+DEVFULLRELEASENAME="VERSION: v33a replace her"
 
 cd "$(dirname "$0")"
 clear
 
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
+
 # trans pride
-echo "Trans pride! (8-bit edition)"
-echo ""
-echo -e "\e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m              "
-echo -e "\e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m              "
-echo -e "\e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m \e[0m\e[107m              "
-echo -e "\e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m \e[0m\e[106m              "
-echo -e "\e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m \e[0m\e[105m              "
-echo -e "\e[0m\e[108m"
 echo "Launching..."
-echo ""
 # meow
 
+
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
+
 sleep 5s    
+
+
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
+
     
 # Clear screen, set color
 clear
@@ -121,7 +127,6 @@ echo ""
 echo -e '\e[0;00m'
 clear
 echo -ne "\e]0;bash text adventure\a"
-read -rsp $'Press Enter to start bash text adventure...\n\n(awaiting input PRESS ENTER) '
 #Set title of cmd window
 echo -ne "\e]0;bash text adventure\a"
 
@@ -248,7 +253,7 @@ if [[ $skipcosdev == y* ]]; then
     qsim=devcheats?
     echo "skipping."
 else
-    clear && echo "$UPDATECOMPAREPATHGREP" && echo "Hello, and welcome to textadv.sh, a bash text adventure game by Novimatrem" && echo "" && echo "$DEVFULLRELEASENAME" && echo "" && echo "You are using '$OSTYPE' ($(uname)) [$HOSTTYPE]". && echo "" && read -rsp $'Press Enter to begin the game!\n'
+    clear && echo "$UPDATECOMPAREPATHGREP" && echo "" && echo "" && echo "" && echo "" && echo "" && echo ""
 fi
 
 
@@ -346,12 +351,23 @@ echo "Closing."
 echo ""
 exit
 fi
+clear
+
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
+
 echo ""
 echo "An 80x24 test image will be displayed for 5 seconds."
 echo "The letter o should be in each CORNER of your Terminal."
 echo "The test image should be a complete unbroken box, a border."
 echo ""
 echo "(Loading...)"
+
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
+
 if [[ $skipcosdev == y* ]]; then
     echo "skip to main game"
 else
@@ -615,6 +631,10 @@ ROOMID=5
 
 # This entire game is a biig loop.
 while true; do
+
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
 
 # Check we remain the right size to play.
 CHARWIDTH="$(tput cols)"
@@ -1297,6 +1317,17 @@ if [ "$QUERY" = "dev rows" ]; then
   PRINTINFO=0
 fi
 
+if [ "$QUERY" = "dev zr" ]; then
+  qsim=devcheats?
+  bash zoeyreplace.sh
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "zr" ]; then
+  bash zoeyreplace.sh
+  PRINTINFO=0
+fi
+
 if [ "$QUERY" = "dev clogq" ]; then
   cd "$(dirname "$0")"
   echo "Log removed."
@@ -1474,6 +1505,10 @@ echo USR_QUERY $QUERY at $(date) >> log.txt
 cd "$(dirname "$0")"
 touch log.txt
 echo ROOMID $ROOMID >> log.txt
+
+# fix junk zr debug causes
+cd "$(dirname "$0")"
+rm -rf sed*
 
 # This entire game is a biig loop.
 done
