@@ -85,9 +85,9 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v34a)"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v35a)"
 
-MOJANGNAME="main menu update"
+MOJANGNAME="improved zr"
 
 cd "$(dirname "$0")"
 clear
@@ -1317,7 +1317,12 @@ if [ "$QUERY" = "dev rows" ]; then
 fi
 
 if [ "$QUERY" = "zr" ]; then
-espeak -p 66 -s 150 "$(bash zoeyreplace.sh)"
+
+zr_response=$(bash zoeyreplace.sh)
+
+echo $zr_response
+espeak -p 66 -s 150 "$zr_response"
+
   PRINTINFO=0
 fi
 

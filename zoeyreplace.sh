@@ -3,7 +3,6 @@
 
 # requires snap install dm-tools
 
-clear
 #echo "requires snap install dm-tools"
 #echo ""
 #echo "ZOEY REPLACEMENT SCRIPT STARTS"
@@ -40,9 +39,6 @@ sed -n "$rnum p" $WORDFILE;
 
 
 # PRINT THE FIRST WORD (DICT)
-printf %s "sentence: "
-echo ""
-clear
 printf %s "$(randword)" | tr [:upper:] [:lower:] | fold -w 99999 | sed "s/'s.*//" | tr -s " "
 
 # PRINT THE SECOND WORD (CUSTOM)
