@@ -1,0 +1,17 @@
+START User started game at Tue 9 Jul 19:30:36 UTC 2024
+READY Game has reached the ready state at Tue Jul 9 19:30:37 UTC 2024
+OSTYPE Using is using linux-gnu Linux [x86_64]
+VERSION Game is version textadv.sh - a bash text adventure by Novimatrem (version v38a)
+TURNCOUNTER 1
+USR_QUERY cls at Tue Jul 9 19:30:40 UTC 2024
+ROOMID 5
+TURNCOUNTER 2
+USR_QUERY cls at Tue Jul 9 19:30:42 UTC 2024
+ROOMID 5
+START User started game at Tue 9 Jul 19:42:37 UTC 2024
+READY Game has reached the ready state at Tue Jul 9 19:42:40 UTC 2024
+OSTYPE Using is using linux-gnu Linux [x86_64]
+VERSION Game is version textadv.sh - a bash text adventure by Novimatrem (version v38a)
+TURNCOUNTER 1
+USR_QUERY cls at Tue Jul 9 19:42:45 UTC 2024
+ROOMID 5

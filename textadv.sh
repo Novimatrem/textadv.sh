@@ -85,9 +85,9 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v38a)"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v38c)"
 
-MOJANGNAME="optimized"
+MOJANGNAME="debugging windows"
 
 cd "$(dirname "$0")"
 clear
@@ -1298,6 +1298,13 @@ fi
 if [ "$QUERY" = "dev cols" ]; then
   qsim=devcheats?
   tput cols
+  echo ""
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev pwd" ]; then
+  qsim=devcheats?
+  pwd
   echo ""
   PRINTINFO=0
 fi
