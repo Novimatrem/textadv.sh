@@ -47,6 +47,7 @@ curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 # duki nuki
 cd "$(dirname "$0")"
 echo "Working..."
+rm -rf lots-of-dots.txt
 rm -rf bag-art-convert.sh
 rm -rf edit-script-haiku.sh
 rm -rf get-command-listing.sh
@@ -82,6 +83,7 @@ unalias cp
 
 # HERE IS THE WRITE
 
+yes | cp -rf lots-of-dots.txt ../../textadv.sh/lots-of-dots.txt
 yes | cp -rf bag-art-convert.sh ../../textadv.sh/bag-art-convert.sh
 yes | cp -rf edit-script-haiku.sh ../../textadv.sh/edit-script-haiku.sh
 yes | cp -rf get-command-listing.sh ../../textadv.sh/get-command-listing.sh
@@ -118,6 +120,7 @@ rm -rf update-process
 
 # duki nuki
 echo "Working..."
+rm -rf lots-of-dots.txt
 rm -rf bag-art-convert.sh
 rm -rf edit-script-haiku.sh
 rm -rf get-command-listing.sh
@@ -163,6 +166,7 @@ sleep 3s
 
 # HERE IS THE WRITE 2
 
+yes | cp -rf lots-of-dots.txt ../../lots-of-dots.txt
 yes | cp -rf bag-art-convert.sh ../../bag-art-convert.sh
 yes | cp -rf edit-script-haiku.sh ../../edit-script-haiku.sh
 yes | cp -rf get-command-listing.sh ../../get-command-listing.sh
