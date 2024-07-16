@@ -7,8 +7,6 @@
 #echo ""
 #echo "ZOEY REPLACEMENT SCRIPT STARTS"
 #echo ""
-sleep 1s
-sleep 0.12s
 
 array[0]="meow"
 array[1]="nya"
