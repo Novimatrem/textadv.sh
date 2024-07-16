@@ -1327,7 +1327,7 @@ if [ "$QUERY" = "zr" ]; then
 
  PRINTINFO=0
   cd $(dirname $0) && cat lotsofdots.txt
-  sleep 1s
+  sleep 0s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
   cd $(dirname $0) && cat lotsofdots.txt
