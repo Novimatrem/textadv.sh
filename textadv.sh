@@ -1340,7 +1340,7 @@ if [ "$QUERY" = "zr" ]; then
 zr_response=$(bash zoeyreplace.sh)
 
 echo $zr_response
-espeak -p 66 -s 150 "$zr_response"
+#espeak -p 66 -s 150 "$zr_response"
 
   PRINTINFO=0
 fi
