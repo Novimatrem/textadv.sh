@@ -1345,6 +1345,28 @@ echo $zr_response
   PRINTINFO=0
 fi
 
+if [ "$QUERY" = "zrs" ]; then
+
+ PRINTINFO=0
+  cd $(dirname $0) && cat lotsofdots.txt
+  sleep 0s
+  s=20000; printf %$s's\n' " "
+  yes '' | head -n1000
+  cd $(dirname $0) && cat lotsofdots.txt
+  cd $(dirname $0) && cat lotsofdots.txt
+  s=20000; printf %$s's\n' " "
+  cd $(dirname $0) && cat lotsofdots.txt
+  clear
+  echo "? zrs"
+  
+zr_response=$(bash zoeyreplaceS.sh)
+
+echo $zr_response
+#espeak -p 66 -s 150 "$zr_response"
+
+  PRINTINFO=0
+fi
+
 if [ "$QUERY" = "dev clogq" ]; then
   cd "$(dirname "$0")"
   echo "Log removed."
