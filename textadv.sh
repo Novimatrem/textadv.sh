@@ -85,9 +85,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v38c)"
-
-MOJANGNAME="debugging windows"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v39a)"
+MOJANGNAME="basic hp"
 
 cd "$(dirname "$0")"
 clear
@@ -716,6 +715,36 @@ echo "The Terminal size ideal for the game is 80x24"
 echo ""
 fi
 
+
+# hp system
+hp=$(echo $hp)
+maxhp=$(echo $maxhp)
+minhp=0
+
+# If max HP is not defined, set current and max HP to 20 as the starter hp
+if [ -z "${maxhp}" ]; then
+  hp=20
+fi
+
+if [ -z "${maxhp}" ]; then
+  maxhp=20
+fi
+
+# Make sure HP can't go higher than max.
+if ((hp >= $maxhp+1)); then
+  hp="$(echo $maxhp)"
+fi
+
+# Make sure HP can't go lower than min.
+if ((hp <= $minhp)); then
+  hp="$(echo $minhp)"
+fi
+
+# Heal 1hp per turn, passively, if injured.
+if ((hp < $maxhp)); then
+  hp=$(($hp+1)) && echo "You rest up a bit, recovering some HP."
+fi
+
 # wg system
 WGPLAYERWEIGHTHIGHCAP=2601
 WGPLAYERWEIGHTZOEYMATCH=716
@@ -1313,6 +1342,30 @@ if [ "$QUERY" = "dev lines" ]; then
   qsim=devcheats?
   tput lines
   echo ""
+  PRINTINFO=0
+fi
+
+
+if [ "$QUERY" = "dev hp" ]; then
+  qsim=devcheats?
+  echo "hp:"
+  echo $hp
+  echo -
+  echo "maxhp:"
+  echo $maxhp
+  echo -
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "dev sethp" ]; then
+  qsim=devcheats?
+  read -p 'Set HP to?: ' hp
+  read -p 'Set MaxHP to?: ' maxhp
+  PRINTINFO=0
+fi
+
+if [ "$QUERY" = "hp" ]; then
+  echo "Health (HP): $hp/$maxhp"
   PRINTINFO=0
 fi
 
