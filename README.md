@@ -1,27 +1,20 @@
 # textadv.sh
 
-[![textadv.sh logo](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/textadv-logo-noshadow.png)](https://gitlab.com/Novimatrem/textadv.sh)  
+# Platforms it does and doesn't run on
 
-v32
+Windows ✅
+Linux ✅
+Haiku ✅
 
-work in progress
+Mac ❌ (no, unfixable non-textadv.sh related bug in all terminals dev could use) [no terminals render ANSI escape codes which i rely on]
 
-# Todo
+BSD ❌ (no, OS non-daily-drivable for dev) [does not include some libraries i'd need in my day to day]
 
-- Stuff.
-
-...
-
-- Many, many other things not listed here.
-
-# Platforms
+ReactOS ❌ (no, OS bluescreens for dev) [alpha software]
 
 The game officially runs on Windows 10, Linux, & Haiku.
 
-If you have an operating system that isn't any of those, it could work, but you're on your own for getting it set up, and it may not function properly at all. Beware.
-
-# Includes pixel art!
-[![pixel art of a fox](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/v25-dot-1-art-update-final-fox.png)](https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/assets/v25-dot-1-art-update-final-fox.png)  
+If you have an operating system that isn't any of those, it could work, but you're on your own for getting it set up, and it may not function properly at all. Beware. 
 
 # how to (win10)
 
@@ -68,12 +61,5 @@ Required dependencies are: bash, git. You can make sure you have them by searchi
 ```cd textadv.sh```
 
 ```bash textadv.sh```
-
-# how to (mac)
-
-Try as I might, I could not get the game working properly on the only Mac I have, which runs Mac OS X 10.6.8 Snow Leopard.
-Given I am only going to use that version of OS X at the highest, ever, because everything after it sucked, I won't be able to support Mac with this game.
-I could not get the colour codes used inside of the game to render on Mac, it was just spewing their code directly into the Terminal.
-If YOU know what I don't, and could offer insight into how to get it working, let me know, and I'd happily test it myself and then provide official instructions.
 
 # The game has an updater. To update the game to the latest version, simply run the following command when in-game: dev update
