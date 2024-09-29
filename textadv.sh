@@ -48,13 +48,8 @@ echo START User started game at $(date) >> log.txt
 # prep
 clear
 force_color_prompt=yes
-setterm --inversescreen off
-setterm --clear
 tput clear
 tput cup 0 0
-setterm --background 0
-setterm --foreground 7
-setterm --bold on
 echo -e '\e[0;00m'
 bash bag-art-convert.sh
 echo -e '\e[0;00m'
@@ -85,8 +80,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v39b)"
-MOJANGNAME="we're so back"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v39c)"
+MOJANGNAME="haiku compat fixes"
 
 cd "$(dirname "$0")"
 clear
@@ -114,13 +109,8 @@ rm -rf sed*
 # Clear screen, set color
 clear
 force_color_prompt=yes
-setterm --inversescreen off
-setterm --clear
 tput clear
 tput cup 0 0
-setterm --background 0
-setterm --foreground 7
-setterm --bold on
 echo -e '\e[0;00m'
 bash bag-art-convert.sh
 echo ""
