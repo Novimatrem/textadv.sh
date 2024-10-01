@@ -80,8 +80,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v39c)"
-MOJANGNAME="haiku compat fixes"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v40a)"
+MOJANGNAME="zlauncher"
 
 cd "$(dirname "$0")"
 clear
@@ -895,6 +895,89 @@ fi
 fi
 #=================================================================#
 
+
+
+# ROOMID 69, zlauncher -------------------------------------------------#
+if [ "$ROOMID" = "69" ]; then
+PRINTINFO=1
+if [ "$PRINTINFO" = "1" ]; then
+
+while true;
+do
+clear
+ echo -e "\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m"
+  echo ""
+  echo -e "\e[0m\e[101mzlauncher                                                                       \e[0m"
+  echo ""
+  echo -e "\e[104m1: firefox\e[0m \e[104m2: featherpad\e[0m \e[104m3: pavucontrol\e[0m \e[104m4: taskmgr\e[0m \e[104m5: gimp\e[0m \e[104m6: guvcview\e[0m"
+  echo ""
+  echo -e "\e[104m7: screenshot\e[0m"
+  
+  # FILLER SPACING
+  echo -e "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "
+# /FILLER SPACING
+
+echo -e "\e[0m"
+PRINTINFO=0
+read -p " zlaunch? " ZLAUNCHER
+PRINTINFO=0
+
+
+
+if [ "$ZLAUNCHER" = "1" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup firefox && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+if [ "$ZLAUNCHER" = "2" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup featherpad && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+if [ "$ZLAUNCHER" = "3" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup pavucontrol && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+if [ "$ZLAUNCHER" = "4" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup xfce4-taskmanager && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+if [ "$ZLAUNCHER" = "5" ]; then
+xfce4-terminal -e "bash -c 'sleep 0s && nohup gimp && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+if [ "$ZLAUNCHER" = "6" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup guvcview && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+
+if [ "$ZLAUNCHER" = "7" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup xfce4-screenshooter && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+if [ "$ZLAUNCHER" = "" ]; then
+sleep 0s && nohup clear && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear
+clear
+fi
+
+
+
+done
+fi
+fi
+#=================================================================#
+
 # Now ask.
 echo -e "\e[0m"
 PRINTINFO=0
@@ -1357,6 +1440,12 @@ fi
 if [ "$QUERY" = "hp" ]; then
   echo "Health (HP): $hp/$maxhp"
   PRINTINFO=0
+fi
+
+if [ "$QUERY" = "zlauncher" ]; then
+  ROOMID=69
+  PRINTINFO=1
+  clear
 fi
 
 if [ "$QUERY" = "dev rows" ]; then
