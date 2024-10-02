@@ -80,8 +80,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v40a)"
-MOJANGNAME="zlauncher"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v41a)"
+MOJANGNAME="zlauncherv2"
 
 cd "$(dirname "$0")"
 clear
@@ -905,16 +905,20 @@ if [ "$PRINTINFO" = "1" ]; then
 while true;
 do
 clear
- echo -e "\e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m"
-  echo ""
-  echo -e "\e[0m\e[101mzlauncher                                                                       \e[0m"
+ echo -e "                                                                     ] \e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m["
+ 
+  echo -e "\e[0m\e[101mzlauncher v2                                                                    \e[0m"
   echo ""
   echo -e "\e[104m1: firefox\e[0m \e[104m2: featherpad\e[0m \e[104m3: pavucontrol\e[0m \e[104m4: taskmgr\e[0m \e[104m5: gimp\e[0m \e[104m6: guvcview\e[0m"
   echo ""
-  echo -e "\e[104m7: screenshot\e[0m"
+  echo -e "\e[104m7: screenshot\e[0m \e[100m8: Instagram\e[0m" 
+  echo -e "                             \e[100m- Create a YouTube video / LIVEstream / LIVEclip?\e[0m"
+  echo -e "                             \e[100m- Post an image/reel to Instagram?\e[0m"
+  echo ""
+  echo "Todo: make more videos/images/streams"
   
   # FILLER SPACING
-  echo -e "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "
+  echo -e "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "
 # /FILLER SPACING
 
 echo -e "\e[0m"
@@ -962,6 +966,13 @@ fi
 
 if [ "$ZLAUNCHER" = "7" ]; then
 xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup xfce4-screenshooter && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+if [ "$ZLAUNCHER" = "8" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup zenity --warning --text 'ERR_INSTAGRAM_ONLY_WORKS_ON_YOUR_PHONE' && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
 clear
 fi
 
