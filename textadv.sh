@@ -43,6 +43,12 @@
 cd
 cd ./Working/textadv.sh/
 
+# Attempt to fix the user from their own mistake
+cd
+cd textadv.sh
+cd Working
+cd textadv.sh
+
 # Save the user's game start to a log for debugging purposes.
 clear
 cd "$(dirname "$0")"
@@ -84,8 +90,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42a)"
-MOJANGNAME="bugfixes"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42b)"
+MOJANGNAME="bugfixes2"
 
 cd "$(dirname "$0")"
 clear
