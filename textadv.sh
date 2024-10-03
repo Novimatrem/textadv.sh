@@ -90,8 +90,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42g)"
-MOJANGNAME="bugfixes7"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v43b)"
+MOJANGNAME="bugfixes9"
 
 cd "$(dirname "$0")"
 clear

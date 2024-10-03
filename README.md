@@ -8,7 +8,7 @@
 | -------------------------------------------------------------------------------------------------------------------- | ---- | -------------------- | ------ |
 | ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/HAI.png "HAI (48x48)") | textadv.sh | Haiku             | ✅     |
 | ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/LIN.png "LIN (48x48)") | textadv.sh | Linux            | ✅     |
-| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/WIN.png "WIN (48x48)") | run-win-LTSC-enterprise.bat  | Windows              | ✅     |
+| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/WIN.png "WIN (48x48)") | run-win-zoey.bat | Windows              | ✅     |
 
 <!-- TABLE_END -->
 
@@ -24,17 +24,13 @@ It requires Windows 10 build 17063 or later.
 
 Run the following commands inside of Git Bash in order to download and start the game.
 
-Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store, unless you are using LTSC, where the game has a launcher to download that Terminal for you.)
+Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store)
 
 ```git clone https://gitlab.com/Novimatrem/textadv.sh```
 
 ```cd textadv.sh```
 
 ```cmd "/C run-win-zoey.bat"```
-
-(OR if you are on LTSC, this command instead:)
-
-```cmd "/C run-win-LTSC-enterprise.bat"```
 
 # how to (linux)
 

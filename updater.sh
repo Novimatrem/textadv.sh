@@ -69,7 +69,6 @@ rm -rf testfile-garbage-ignore6.txt
 rm -rf oldbagart.txt
 rm -rf open-dir-haiku.sh
 rm -rf README.md
-rm -rf run-win-LTSC-enterprise.bat
 rm -rf run-win-zoey.bat
 rm -rf start.sh
 rm -rf textadv.sh
@@ -106,7 +105,6 @@ yes | cp -rf testfile-garbage-ignore6.txt ../../textadv.sh/testfile-garbage-igno
 yes | cp -rf oldbagart.txt ../../textadv.sh/oldbagart.txt
 yes | cp -rf open-dir-haiku.sh ../../textadv.sh/open-dir-haiku.sh
 yes | cp -rf README.md ../../textadv.sh/README.md
-yes | cp -rf run-win-LTSC-enterprise.bat ../../textadv.sh/run-win-LTSC-enterprise.bat
 yes | cp -rf run-win-zoey.bat ../../textadv.sh/run-win-zoey.bat
 yes | cp -rf start.sh ../../textadv.sh/start.sh
 yes | cp -rf ./textadv.sh ../../textadv.sh/textadv.sh
@@ -142,7 +140,6 @@ rm -rf testfile-garbage-ignore6.txt
 rm -rf oldbagart.txt
 rm -rf open-dir-haiku.sh
 rm -rf README.md
-rm -rf run-win-LTSC-enterprise.bat
 rm -rf run-win-zoey.bat
 rm -rf start.sh
 #rm -rf textadv.sh NOPE NOT THIS TIME
@@ -189,7 +186,6 @@ yes | cp -rf testfile-garbage-ignore6.txt ../../testfile-garbage-ignore6.txt
 yes | cp -rf oldbagart.txt ../../oldbagart.txt
 yes | cp -rf open-dir-haiku.sh ../../open-dir-haiku.sh
 yes | cp -rf README.md ../../README.md
-yes | cp -rf run-win-LTSC-enterprise.bat ../../run-win-LTSC-enterprise.bat
 yes | cp -rf run-win-zoey.bat ../../run-win-zoey.bat
 yes | cp -rf start.sh ../../start.sh
 yes | cp -rf ./textadv.sh ../../textadv.sh
