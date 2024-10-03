@@ -39,6 +39,10 @@
 #
 # =====================================================================================================================
 
+# Save some errors if you're zoey, do nothing if you're not
+cd
+cd ./Working/textadv.sh/
+
 # Save the user's game start to a log for debugging purposes.
 clear
 cd "$(dirname "$0")"
@@ -80,8 +84,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v41a)"
-MOJANGNAME="zlauncherv2"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42a)"
+MOJANGNAME="bugfixes"
 
 cd "$(dirname "$0")"
 clear
@@ -620,9 +624,7 @@ ROOMID=5
 # This entire game is a biig loop.
 while true; do
 
-# fix junk zr debug causes
-cd "$(dirname "$0")"
-rm -rf sed*
+
 
 # Check we remain the right size to play.
 CHARWIDTH="$(tput cols)"
@@ -856,7 +858,7 @@ TURNCOUNTER="$(($TURNCOUNTER + 1))"
 
 if [ "$EVERREADY" = "0" ]; then
 # Ready state log
-cd "$(dirname "$0")"
+
 EVERREADY=1
 touch log.txt
 echo READY Game has reached the ready state at $(date) >> log.txt
@@ -1511,7 +1513,7 @@ echo $zr_response
 fi
 
 if [ "$QUERY" = "dev clogq" ]; then
-  cd "$(dirname "$0")"
+  
   echo "Log removed."
   qsim=devcheats?
   rm -rf log.txt
