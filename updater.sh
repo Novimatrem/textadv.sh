@@ -37,15 +37,22 @@ fi
 if [ "$UPDATESEQUENCE" = "1" ]; then
 echo "We are updating now."
 echo ""
+git pull
+git fetch
 cd "$(dirname "$0")"
-
+git pull
+git fetch
 rm -rf updater.sh
 curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 
 # Yes, I'm doing this like this, programmer friend. I'm being very careful. Purposefully.
 
 # duki nuki
+git pull
+git fetch
 cd "$(dirname "$0")"
+git pull
+git fetch
 echo "Working..."
 rm -rf lots-of-dots.txt
 rm -rf bag-art-convert.sh
