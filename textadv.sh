@@ -90,8 +90,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42d)"
-MOJANGNAME="bugfixes4"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42e)"
+MOJANGNAME="bugfixes5"
 
 cd "$(dirname "$0")"
 clear
@@ -868,7 +868,7 @@ if [ "$EVERREADY" = "0" ]; then
 EVERREADY=1
 touch log.txt
 chown $USER:$USER log.txt
-chown $USER log.txt
+#chown $USER log.txt
 echo READY Game has reached the ready state at $(date) >> log.txt
 echo OSTYPE Using is using $OSTYPE $(uname) [$HOSTTYPE] >> log.txt
 echo VERSION Game is version $DEVFULLRELEASENAME >> log.txt
