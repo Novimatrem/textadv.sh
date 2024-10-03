@@ -52,8 +52,8 @@ cd textadv.sh
 # Save the user's game start to a log for debugging purposes.
 clear
 cd "$(dirname "$0")"
-touch log.txt
-echo START User started game at $(date) >> log.txt
+# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
+
 
 # prep
 clear
@@ -90,8 +90,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42f)"
-MOJANGNAME="bugfixes6"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42g)"
+MOJANGNAME="bugfixes7"
 
 cd "$(dirname "$0")"
 clear
@@ -866,16 +866,9 @@ if [ "$EVERREADY" = "0" ]; then
 # Ready state log
 
 EVERREADY=1
-chown $USER:$USER *
-chown $USER:$USER *.*
-chown $USER:$USER ../textadv.sh
-chown $USER:$USER ../textadv.sh/*
-touch log.txt
-chown $USER:$USER log.txt
-#chown $USER log.txt
-echo READY Game has reached the ready state at $(date) >> log.txt
-echo OSTYPE Using is using $OSTYPE $(uname) [$HOSTTYPE] >> log.txt
-echo VERSION Game is version $DEVFULLRELEASENAME >> log.txt
+
+# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
+
 fi
 
 # Set the scene based on what we know, if it's the time we do that.
@@ -1319,8 +1312,8 @@ export UPDATESEQUENCE=0
   cd $(dirname $0) && cat lotsofdots.txt
  # Save the user's game stop to a log for debugging purposes.
 cd "$(dirname "$0")"
-touch log.txt
-echo STOP User stopped game at $(date) >> log.txt
+
+# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
   clear
   echo "Goodbye for now!"
@@ -1740,18 +1733,18 @@ fi
 
 # Save the user's turn to a log for debugging purposes.
 cd "$(dirname "$0")"
-touch log.txt
-echo TURNCOUNTER $TURNCOUNTER >> log.txt
+
+# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 # Save the user's last query to a log for debugging purposes.
 cd "$(dirname "$0")"
-touch log.txt
-echo USR_QUERY $QUERY at $(date) >> log.txt
+
+# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 # Save the user's roomid to a log for debugging purposes.
 cd "$(dirname "$0")"
-touch log.txt
-echo ROOMID $ROOMID >> log.txt
+
+# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 # fix junk zr debug causes
 cd "$(dirname "$0")"
