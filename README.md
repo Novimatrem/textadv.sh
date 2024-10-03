@@ -1,16 +1,16 @@
 # textadv.sh
 
-# Platforms it does and doesn't run on
+# Platforms it runs on
 
-Windows ✅
-Linux ✅
-Haiku ✅
+<!-- TABLE_START -->
 
-Mac ❌ (no, unfixable non-textadv.sh related bug in all terminals dev could use) [no terminals render ANSI escape codes which i rely on]
+| OS                                                                                                              | Run | Name                 | Supported |
+| -------------------------------------------------------------------------------------------------------------------- | ---- | -------------------- | ------ |
+| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/HAI.png "HAI (48x48)") | textadv.sh | Haiku             | ✅     |
+| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/LIN.png "LIN (48x48)") | textadv.sh | Linux            | ✅     |
+| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/WIN.png "WIN (48x48)") | run-win-LTSC-enterprise.bat  | Windows              | ✅     |
 
-BSD ❌ (no, OS non-daily-drivable for dev) [does not include some libraries i'd need in my day to day]
-
-ReactOS ❌ (no, OS bluescreens for dev) [alpha software]
+<!-- TABLE_END -->
 
 The game officially runs on Windows 10, Linux, & Haiku.
 
