@@ -90,8 +90,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42e)"
-MOJANGNAME="bugfixes5"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v42f)"
+MOJANGNAME="bugfixes6"
 
 cd "$(dirname "$0")"
 clear
@@ -866,6 +866,10 @@ if [ "$EVERREADY" = "0" ]; then
 # Ready state log
 
 EVERREADY=1
+chown $USER:$USER *
+chown $USER:$USER *.*
+chown $USER:$USER ../textadv.sh
+chown $USER:$USER ../textadv.sh/*
 touch log.txt
 chown $USER:$USER log.txt
 #chown $USER log.txt
