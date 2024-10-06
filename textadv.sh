@@ -1,10 +1,7 @@
 #!/bin/bash
 # textadv.sh
 
-
-# NOTABLE DEV NOTE: make an auto-updater for the game, that works on both Win and Lin.
-# make it nuke all the files, and fully download a new version fresh.
-# because then, mon amour will have a much happier better time working on this with me.
+# NOTABLE DEV NOTE: make improvements to the auto-updater for the game
 
 # Character #1
 # Evelyn:
@@ -90,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v43b)"
-MOJANGNAME="bugfixes9"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v44a)"
+MOJANGNAME="zlauncherv3"
 
 cd "$(dirname "$0")"
 clear
@@ -911,26 +908,26 @@ if [ "$PRINTINFO" = "1" ]; then
 
 while true;
 do
-clear
- echo -e "                                                                     ] \e[100m \e[0m\e[101m \e[0m\e[102m \e[0m\e[103m \e[0m\e[104m \e[0m\e[105m \e[0m\e[106m \e[0m\e[107m \e[0m\e[108m["
- 
-  echo -e "\e[0m\e[101mzlauncher v2                                                                    \e[0m"
+clear 
+  echo -e "\e[0m\e[101mzlauncher v3                                                                    \e[0m"
   echo ""
   echo -e "\e[104m1: firefox\e[0m \e[104m2: featherpad\e[0m \e[104m3: pavucontrol\e[0m \e[104m4: taskmgr\e[0m \e[104m5: gimp\e[0m \e[104m6: guvcview\e[0m"
   echo ""
   echo -e "\e[104m7: screenshot\e[0m \e[100m8: Instagram\e[0m" 
   echo -e "                             \e[100m- Create a YouTube video / LIVEstream / LIVEclip?\e[0m"
-  echo -e "                             \e[100m- Post an image/reel to Instagram?\e[0m"
+  echo -e "\e[104m9: steam (online)\e[0m            \e[100m- Post an image/reel to Instagram?\e[0m"
+  echo -e ""
+  echo -e "\e[104m10: steam (no net)\e[0m \e[104m11: minecraft\e[0m \e[104m12: gmod\e[0m"
   echo ""
   echo "Todo: make more videos/images/streams"
   
   # FILLER SPACING
-  echo -e "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          "
+  echo -e "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
 # /FILLER SPACING
 
 echo -e "\e[0m"
 PRINTINFO=0
-read -p " zlaunch? " ZLAUNCHER
+read -p "zlaunch? " ZLAUNCHER
 PRINTINFO=0
 
 
@@ -982,6 +979,35 @@ if [ "$ZLAUNCHER" = "8" ]; then
 xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup zenity --warning --text 'ERR_INSTAGRAM_ONLY_WORKS_ON_YOUR_PHONE' && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
 clear
 fi
+
+
+
+if [ "$ZLAUNCHER" = "9" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup steam && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+if [ "$ZLAUNCHER" = "10" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup bash /home/$(whoami)/steamZoeyOffline.sh && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+if [ "$ZLAUNCHER" = "11" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup /opt/CurseForge/curseforge %U && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+if [ "$ZLAUNCHER" = "12" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup steam steam://launch/4000/ && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+
 
 
 if [ "$ZLAUNCHER" = "" ]; then
