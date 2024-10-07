@@ -14,6 +14,8 @@
 
 I have had technical issues halting any of my attempts to work on a port to Mac OS, and ReactOS.
 
+Why not BSD? [I talk about that here.](https://www.youtube.com/watch?v=p3cE1V3iSvA)
+
 The game officially runs on Windows 10, Linux, & Haiku.
 
 If you have an operating system that isn't any of those, it could work, but you're on your own for getting it set up, and it may not function properly at all. Beware. 
