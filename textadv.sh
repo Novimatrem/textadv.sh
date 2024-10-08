@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v44a)"
-MOJANGNAME="zlauncherv3"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v45a)"
+MOJANGNAME="zlauncherv4"
 
 cd "$(dirname "$0")"
 clear
@@ -909,7 +909,7 @@ if [ "$PRINTINFO" = "1" ]; then
 while true;
 do
 clear 
-  echo -e "\e[0m\e[101mzlauncher v3                                                                    \e[0m"
+  echo -e "\e[0m\e[101mzlauncher v4                                                                    \e[0m"
   echo ""
   echo -e "\e[104m1: firefox\e[0m \e[104m2: featherpad\e[0m \e[104m3: pavucontrol\e[0m \e[104m4: taskmgr\e[0m \e[104m5: gimp\e[0m \e[104m6: guvcview\e[0m"
   echo ""
@@ -919,10 +919,11 @@ clear
   echo -e ""
   echo -e "\e[104m10: steam (no net)\e[0m \e[104m11: minecraft\e[0m \e[104m12: gmod\e[0m"
   echo ""
+  echo -e "\e[104m13: therapy formu.\e[0m \e[104m14: therapy check.\e[0m \e[104m15: therapy goals\e[0m"
+  echo ""
   echo "Todo: make more videos/images/streams"
   
   # FILLER SPACING
-  echo -e "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
 # /FILLER SPACING
 
 echo -e "\e[0m"
@@ -1002,6 +1003,29 @@ fi
 
 if [ "$ZLAUNCHER" = "12" ]; then
 xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup steam steam://launch/4000/ && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+if [ "$ZLAUNCHER" = "13" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup firefox https://docs.google.com/document/d/105WuYbB6pji63Emi30fyAfPxxsIRSKlDBGPuzimVCCw/edit#heading=h.s3sa1q3asm7r && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+
+if [ "$ZLAUNCHER" = "14" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup firefox https://docs.google.com/document/d/1ZRg9U16YXYSPYqNyo2yKp5mjLYXbkirUEmuwO3EqlfI/edit && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
+clear
+fi
+
+
+
+
+if [ "$ZLAUNCHER" = "15" ]; then
+xfce4-terminal -e "nohup bash -c 'sleep 0s && nohup firefox https://docs.google.com/document/d/1o9Scm05tMsrLyY3b93tu1KbtlE66LC0A1F8RjcDvCSM/edit#heading=h.ttgtyao3ygcq && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown && echo "" > /dev/null && clear ; clear'"
 clear
 fi
 
