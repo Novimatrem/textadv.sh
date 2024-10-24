@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v45a)"
-MOJANGNAME="zlauncherv4"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v46a)"
+MOJANGNAME="ltscfixes1"
 
 cd "$(dirname "$0")"
 clear
@@ -112,6 +112,14 @@ sleep 0s
 cd "$(dirname "$0")"
 rm -rf sed*
 
+echo "If the below doesn't say 80x24, then resize this terminal to 80x24,"
+echo "then once you are done, press Enter/Return"
+echo ""
+echo "It spawned at:"
+tput cols
+tput lines
+echo ""
+read -rsp "[waiting for keypress...]" Resize this terminal to 80x24, then press Enter/Return
     
 # Clear screen, set color
 clear
