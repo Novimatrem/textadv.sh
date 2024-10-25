@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v52a)"
-MOJANGNAME="ltscfixes7"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v53a)"
+MOJANGNAME="ltscfixes8"
 
 cd textadv.sh
 clear

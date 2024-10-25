@@ -2,12 +2,19 @@
 @title Launcher (Win LTSC) vRolling
 cls
 
+echo.
 echo Pay attention!
-echo If the next line says "Access is denied.", re-run this script as admin!
+echo.
+echo If the line under this message says "Access is denied.", go to the script's folder,
+echo and re-run this script as admin by right-clicking run-win-LTSC-enterprise.bat and pressing Run as administrator! 
+echo For reference, the script's folder is: (Folder: "%~dp0" )
+echo VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 echo.
 mklink "C:\Program Files\Git\textadv.sh" "C:\Users\%username%\textadv.sh"
 echo.
-echo If it says created, or that it already exists, you're good, simply
+echo ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If it gets created, or says that it already exists, you're good, now simply
 pause
 cls
 echo Downloading dependencies...
