@@ -1,6 +1,15 @@
 @echo off
 @title Launcher (Win LTSC) vRolling
 cls
+
+echo Pay attention!
+echo If the next line says "Access is denied.", re-run this script as admin!
+echo.
+mklink "C:\Program Files\Git\textadv.sh" "C:\Users\%username%\textadv.sh"
+echo.
+echo If it says created, or that it already exists, you're good, simply
+pause
+cls
 echo Downloading dependencies...
 echo please wait
 echo.

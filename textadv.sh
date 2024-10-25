@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v47a)"
-MOJANGNAME="ltscfixes2"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v48a)"
+MOJANGNAME="ltscfixes3"
 
 cd "$(dirname "$0")"
 clear
@@ -144,14 +144,14 @@ CHARHEIGHT="$(tput lines)"
 # Check forcefully that we're at least the right size at a minimum
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -166,14 +166,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -188,14 +188,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -210,14 +210,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -264,14 +264,14 @@ CHARHEIGHT="$(tput lines)"
 sleep 0s
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -286,14 +286,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -308,14 +308,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -330,14 +330,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -372,14 +372,14 @@ CHARHEIGHT="$(tput lines)"
 sleep 0s
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -394,14 +394,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -416,14 +416,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -438,14 +438,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 0s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -517,14 +517,14 @@ CHARHEIGHT="$(tput lines)"
 sleep 0.166s
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -539,14 +539,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -561,14 +561,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -583,14 +583,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -634,7 +634,7 @@ ROOMID=5
 
 # This entire game is a biig loop.
 while true; do
-
+cd textadv.sh
 
 
 # Check we remain the right size to play.
@@ -644,14 +644,14 @@ CHARHEIGHT="$(tput lines)"
 # Continue to ensure we're at the right size
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -663,14 +663,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -682,14 +682,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -701,14 +701,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -864,7 +864,7 @@ fi
 # It's a whole new turn!
 
 TURNCOUNTER="$(($TURNCOUNTER + 1))" 
-
+pwd
 # ---
 
 if [ "$EVERREADY" = "0" ]; then
@@ -892,9 +892,12 @@ fi
 
 echo -e "On the nearby wall, there's a \e[1;34;4;1mpainting\e[0m.";
 echo ""
-echo "Hey, by the way, this thing thinks the current path is:"
-echo "$(pwd)"
-echo "That's probably wrong as heck! I need to fix that for Win 10 LTSC support!"
+#echo "Hey, by the way, this thing thinks the current path is:"
+#echo "$(pwd)"
+#echo "That's probably wrong as heck! I need to fix that for Win 10 LTSC support!"
+
+#ls
+#pwd
 
 fi
 fi
@@ -1151,14 +1154,14 @@ CHARHEIGHT="$(tput lines)"
 # Check forcefully that we're at least the right size at a minimum
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1171,14 +1174,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1191,14 +1194,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1211,14 +1214,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1362,14 +1365,14 @@ if [ "$QUERY" = "exit" ]; then
   PRINTINFO=0
   UPDATESEQUENCE=0
 export UPDATESEQUENCE=0
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   sleep 1s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
-  cd $(dirname $0) && cat lotsofdots.txt
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
+  cat lotsofdots.txt
   s=20000; printf %$s's\n' " "
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
  # Save the user's game stop to a log for debugging purposes.
 cd "$(dirname "$0")"
 
@@ -1383,14 +1386,14 @@ fi
 
 if [ "$QUERY" = "cls" ]; then
   PRINTINFO=0
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   sleep 1s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
-  cd $(dirname $0) && cat lotsofdots.txt
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
+  cat lotsofdots.txt
   s=20000; printf %$s's\n' " "
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   clear
   echo ""
   echo "Cleared screen."
@@ -1398,14 +1401,14 @@ fi
 
 if [ "$QUERY" = "clr" ]; then
   PRINTINFO=0
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   sleep 1s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
-  cd $(dirname $0) && cat lotsofdots.txt
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
+  cat lotsofdots.txt
   s=20000; printf %$s's\n' " "
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   clear
   echo ""
   echo "Cleared screen."
@@ -1413,14 +1416,14 @@ fi
 
 if [ "$QUERY" = "clear" ]; then
   PRINTINFO=0
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   sleep 1s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
-  cd $(dirname $0) && cat lotsofdots.txt
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
+  cat lotsofdots.txt
   s=20000; printf %$s's\n' " "
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   clear
   echo ""
   echo "Cleared screen."
@@ -1536,14 +1539,14 @@ fi
 if [ "$QUERY" = "zr" ]; then
 
  PRINTINFO=0
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   sleep 0s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
-  cd $(dirname $0) && cat lotsofdots.txt
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
+  cat lotsofdots.txt
   s=20000; printf %$s's\n' " "
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   clear
   echo "? zr"
   
@@ -1558,14 +1561,14 @@ fi
 if [ "$QUERY" = "zrs" ]; then
 
  PRINTINFO=0
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   sleep 0s
   s=20000; printf %$s's\n' " "
   yes '' | head -n1000
-  cd $(dirname $0) && cat lotsofdots.txt
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
+  cat lotsofdots.txt
   s=20000; printf %$s's\n' " "
-  cd $(dirname $0) && cat lotsofdots.txt
+  cat lotsofdots.txt
   clear
   echo "? zrs"
   
@@ -1703,14 +1706,14 @@ CHARHEIGHT="$(tput lines)"
 # Check forcefully that we're at least the right size at a minimum
 if [ "$CHARWIDTH" -le "79" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1723,14 +1726,14 @@ fi
 
 if [ "$CHARHEIGHT" -le "23" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1743,14 +1746,14 @@ fi
 
 if [ "$CHARWIDTH" -ge "81" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
@@ -1763,14 +1766,14 @@ fi
 
 if [ "$CHARHEIGHT" -ge "25" ]; then
 PRINTINFO=0
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 sleep 1s
 s=20000; printf %$s's\n' " "
 yes '' | head -n1000
-cd $(dirname $0) && cat lotsofdots.txt
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
+cat lotsofdots.txt
 s=20000; printf %$s's\n' " "
-cd $(dirname $0) && cat lotsofdots.txt
+cat lotsofdots.txt
 clear
 echo ""
 echo "ERROR:"
