@@ -1,5 +1,5 @@
 #!/bin/bash
-# updater.sh v32 awesome edition
+# updater.sh awesome edition
 # Please run the updater from in-game with the command: dev update
 
 # This product is licensed under the GNU GPL v3.0.
@@ -39,7 +39,7 @@ echo "We are updating now."
 echo ""
 git pull
 git fetch
-cd "$(dirname "$0")"
+cd textadv.sh
 git pull
 git fetch
 rm -rf updater.sh
@@ -50,7 +50,7 @@ curl -O https://gitlab.com/Novimatrem/textadv.sh/-/raw/main/updater.sh
 # duki nuki
 git pull
 git fetch
-cd "$(dirname "$0")"
+cd textadv.sh
 git pull
 git fetch
 echo "Working..."

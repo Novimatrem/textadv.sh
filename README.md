@@ -8,7 +8,7 @@
 | -------------------------------------------------------------------------------------------------------------------- | ---- | -------------------- | ------ |
 | ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/HAI.png "HAI (48x48)") | textadv.sh | Haiku             | ✅     |
 | ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/LIN.png "LIN (48x48)") | textadv.sh | Linux            | ✅     |
-| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/WIN.png "WIN (48x48)") | run-win-zoey.bat | Windows              | ✅     |
+| ![](https://raw.githubusercontent.com/EgoistDeveloper/operating-system-logos/master/src/48x48/WIN.png "WIN (48x48)") | run-win-zoey.bat* | Windows (10)              | ✅     |
 
 <!-- TABLE_END -->
 
@@ -35,6 +35,12 @@ Required dependencies are: Git Bash (https://github.com/git-for-windows/git/rele
 ```cd textadv.sh```
 
 ```cmd "/C run-win-zoey.bat"```
+
+# how to (win10 LTSC)
+
+Follow the steps for Windows 10 but for the last step, use this command instead:
+
+```cmd "/C run-win-LTSC-enterprise.bat"```
 
 # how to (linux)
 

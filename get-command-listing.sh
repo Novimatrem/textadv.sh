@@ -11,3 +11,4 @@ echo ""
 echo "EXPAND YOUR TERMINAL TO SEE ALL"
 rm -rf ./catme0
 rm -rf ./catme1
+sleep 99999999999999999999999999999s

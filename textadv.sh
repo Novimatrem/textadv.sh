@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v49a)"
-MOJANGNAME="ltscfixes4"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v51a)"
+MOJANGNAME="ltscfixes6"
 
 cd textadv.sh
 clear
@@ -111,7 +111,7 @@ sleep 0s
 # fix junk zr debug causes
 cd textadv.sh
 rm -rf sed*
-
+clear
 echo "If the below doesn't say 80x24, then resize this terminal to 80x24,"
 echo "then once you are done, press Enter/Return"
 echo ""
@@ -634,7 +634,7 @@ ROOMID=5
 
 # This entire game is a biig loop.
 while true; do
-cd textadv.sh
+#cd textadv.sh
 
 
 # Check we remain the right size to play.
@@ -864,7 +864,7 @@ fi
 # It's a whole new turn!
 
 TURNCOUNTER="$(($TURNCOUNTER + 1))" 
-pwd
+#pwd
 # ---
 
 if [ "$EVERREADY" = "0" ]; then
@@ -1794,23 +1794,6 @@ if [[ $QUERY == *"dev"* ]]; then
   qsim=devcheats?
 fi
 
-# Save the user's turn to a log for debugging purposes.
-cd textadv.sh
-
-# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
-
-# Save the user's last query to a log for debugging purposes.
-cd textadv.sh
-
-# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
-
-# Save the user's roomid to a log for debugging purposes.
-cd textadv.sh
-
-# LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
-
-# fix junk zr debug causes
-cd textadv.sh
 rm -rf sed*
 
 # This entire game is a biig loop.
