@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v51a)"
-MOJANGNAME="ltscfixes6"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v52a)"
+MOJANGNAME="ltscfixes7"
 
 cd textadv.sh
 clear
@@ -1463,7 +1463,7 @@ echo "To update the game, type y"
 echo "This will delete the installed version entirely and replace it with the newest."
 echo "To not, close this Terminal window now."
 echo ""
-cd textadv.sh
+#cd textadv.sh
 sleep 3s
 while true; do
     read -p "Update? (y) " yn
