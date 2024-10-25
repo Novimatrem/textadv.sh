@@ -48,7 +48,7 @@ cd textadv.sh
 
 # Save the user's game start to a log for debugging purposes.
 clear
-cd "$(dirname "$0")"
+cd textadv.sh
 # LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 
@@ -78,7 +78,7 @@ export UPDATESEQUENCE=0
 EVERREADY=0
 
 # updater workability test
-cd "$(dirname "$0")"
+cd textadv.sh
 UPDATECOMPAREPATH=$(basename "$PWD")
 UPDATECOMPAREPATHGREP=$(echo $UPDATECOMPAREPATH | grep main)
 if [ "$UPDATECOMPAREPATHGREP" = "textadv.sh-main" ]; then
@@ -87,14 +87,14 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v48a)"
-MOJANGNAME="ltscfixes3"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v49a)"
+MOJANGNAME="ltscfixes4"
 
-cd "$(dirname "$0")"
+cd textadv.sh
 clear
 
 # fix junk zr debug causes
-cd "$(dirname "$0")"
+cd textadv.sh
 rm -rf sed*
 
 # trans pride
@@ -102,14 +102,14 @@ rm -rf sed*
 
 
 # fix junk zr debug causes
-cd "$(dirname "$0")"
+cd textadv.sh
 rm -rf sed*
 
 sleep 0s    
 
 
 # fix junk zr debug causes
-cd "$(dirname "$0")"
+cd textadv.sh
 rm -rf sed*
 
 echo "If the below doesn't say 80x24, then resize this terminal to 80x24,"
@@ -352,12 +352,12 @@ fi
 clear
 
 # fix junk zr debug causes
-cd "$(dirname "$0")"
+cd textadv.sh
 rm -rf sed*
 
 
 # fix junk zr debug causes
-cd "$(dirname "$0")"
+cd textadv.sh
 rm -rf sed*
 
 if [[ $skipcosdev == y* ]]; then
@@ -1374,7 +1374,7 @@ export UPDATESEQUENCE=0
   s=20000; printf %$s's\n' " "
   cat lotsofdots.txt
  # Save the user's game stop to a log for debugging purposes.
-cd "$(dirname "$0")"
+cd textadv.sh
 
 # LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
@@ -1463,7 +1463,7 @@ echo "To update the game, type y"
 echo "This will delete the installed version entirely and replace it with the newest."
 echo "To not, close this Terminal window now."
 echo ""
-cd "$(dirname "$0")"
+cd textadv.sh
 sleep 3s
 while true; do
     read -p "Update? (y) " yn
@@ -1665,7 +1665,7 @@ if [ "$QUERY" = "ts" ]; then
   qsim=:
   PRINTINFO=0
 echo "Hey, wake up!"
-cd "$(dirname "$0")"
+cd textadv.sh
 paplay zyou_were_poked.mp3
 powershell -c "pwd"
 powershell -c "(New-Object Media.SoundPlayer zyou_were_poked.wav).PlaySync();" &
@@ -1683,7 +1683,7 @@ echo "🎤 Microphone muted! 🎤"
 echo ""
 echo "🎤"
 
-cd "$(dirname "$0")"
+cd textadv.sh
 paplay zmicrophone-muted-teamspeak.mp3
 powershell -c "pwd"
 powershell -c "(New-Object Media.SoundPlayer zmicrophone-muted-teamspeak.wav).PlaySync();" &
@@ -1795,22 +1795,22 @@ if [[ $QUERY == *"dev"* ]]; then
 fi
 
 # Save the user's turn to a log for debugging purposes.
-cd "$(dirname "$0")"
+cd textadv.sh
 
 # LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 # Save the user's last query to a log for debugging purposes.
-cd "$(dirname "$0")"
+cd textadv.sh
 
 # LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 # Save the user's roomid to a log for debugging purposes.
-cd "$(dirname "$0")"
+cd textadv.sh
 
 # LOGGING REMOVED DUE TO BUGS, WILL RE-ADD LATER
 
 # fix junk zr debug causes
-cd "$(dirname "$0")"
+cd textadv.sh
 rm -rf sed*
 
 # This entire game is a biig loop.
