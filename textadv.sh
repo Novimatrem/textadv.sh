@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v46a)"
-MOJANGNAME="ltscfixes1"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v47a)"
+MOJANGNAME="ltscfixes2"
 
 cd "$(dirname "$0")"
 clear
@@ -891,8 +891,10 @@ if [ "$DRANKMILKSHAKE" = "0" ]; then
 fi
 
 echo -e "On the nearby wall, there's a \e[1;34;4;1mpainting\e[0m.";
-
-
+echo ""
+echo "Hey, by the way, this thing thinks the current path is:"
+echo "$(pwd)"
+echo "That's probably wrong as heck! I need to fix that for Win 10 LTSC support!"
 
 fi
 fi

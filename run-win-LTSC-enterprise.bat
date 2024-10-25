@@ -20,4 +20,11 @@ cd /D "%~dp0"
 
 REM EOF
 :eof
+cls
+echo Game launched, you should see it in another window!
+echo.
+echo Hey, by the way, this thing thinks the current path is
+echo %~dp0
+echo.
+echo To close this Terminal window,
 exit
