@@ -87,8 +87,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v53a)"
-MOJANGNAME="ltscfixes8"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v54a)"
+MOJANGNAME="graphs2"
 
 cd textadv.sh
 clear
@@ -1625,31 +1625,29 @@ clear
   
   clear
 echo -ne "                                                                                "
-echo -ne "                                                                                "
-echo -ne "    17│\e[0m\e[40m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " A  16│\e[0m\e[40m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " d  15│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " o  14│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " r  13│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " a  12│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " t  11│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " i  10│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " o   9│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " n   8│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne "     7│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " l   6│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " e   5│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " v   4│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " e   3│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " l   2│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne " s   1│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m                          "
-echo -ne "     0└───────────────────────────────────────────────────────────────────────   "
-echo -ne "      |FoodA| |FoodB| |FoodC| |FoodD| |DrnkA| |DrnkB|                           "
+echo -ne "                                                                               "
+echo -ne "         17│\e[0m\e[40m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m ┌──────┐                "
+echo -ne "  A  16│\e[0m\e[40m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " d  15│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " o  14│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " r  13│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " a  12│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " t  11│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " i  10│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " o   9│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " n   8│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne "     7│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " l   6│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[40m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " e   5│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " v   4│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " e   3│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │                 "
+echo -ne " l   2│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │               "
+echo -ne "   s   1│\e[0m\e[101m       \e[40m \e[0m\e[102m       \e[40m \e[0m\e[103m       \e[40m \e[0m\e[104m       \e[40m \e[0m\e[107m       \e[40m \e[0m\e[105m       \e[40m │      │               "
+echo -ne "       0└─────────────────────────────────────────────────────────────────────   "
+echo -ne "        |FoodA| |FoodB| |FoodC| |FoodD| |DrnkA| |DrnkB| |DrnkC|                   "
 
 while true; do
-    read -rep '                                                                                
-                                                              (Exit: q, Enter)  
-                                                                              ' yns
+    read -rep '' yns
     case $yns in
         [Qq]* ) break;;
         * ) true ;;
