@@ -91,8 +91,8 @@ fi
 
 
 # release number and name
-DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v55a)"
-MOJANGNAME="graphs3"
+DEVFULLRELEASENAME="textadv.sh - a bash text adventure by Novimatrem (version v56a)"
+MOJANGNAME="artdev2"
 
 cd textadv.sh
 clear
@@ -1790,6 +1790,102 @@ exit
 fi
   clear
   echo -e "$(cat oldbagart.txt)"
+  PRINTINFO=0
+  # YOU MUST RETURN TO THE INTERPRETER STRAIGHT AFTER SHOWING ART, OR IT BREAKS THE WHOLE GAME, WE CLEANUP THERE
+fi
+
+
+if [ "$QUERY" = "dev bcharart new" ]; then
+  qsim=devcheats?
+  PRINTINFO=0
+  
+# Check we are the right size to play.
+CHARWIDTH="$(tput cols)"
+CHARHEIGHT="$(tput lines)"
+
+# Print term size test screens.
+# Check forcefully that we're at least the right size at a minimum
+if [ "$CHARWIDTH" -le "79" ]; then
+PRINTINFO=0
+cat lotsofdots.txt
+sleep 1s
+s=20000; printf %$s's\n' " "
+yes '' | head -n1000
+cat lotsofdots.txt
+cat lotsofdots.txt
+s=20000; printf %$s's\n' " "
+cat lotsofdots.txt
+clear
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 80 characters wide so the game fits."
+echo "It's currently only $CHARWIDTH :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+exit
+fi
+
+if [ "$CHARHEIGHT" -le "23" ]; then
+PRINTINFO=0
+cat lotsofdots.txt
+sleep 1s
+s=20000; printf %$s's\n' " "
+yes '' | head -n1000
+cat lotsofdots.txt
+cat lotsofdots.txt
+s=20000; printf %$s's\n' " "
+cat lotsofdots.txt
+clear
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 24 characters high so the game fits."
+echo "It's currently only $CHARHEIGHT :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+exit
+fi
+
+if [ "$CHARWIDTH" -ge "81" ]; then
+PRINTINFO=0
+cat lotsofdots.txt
+sleep 1s
+s=20000; printf %$s's\n' " "
+yes '' | head -n1000
+cat lotsofdots.txt
+cat lotsofdots.txt
+s=20000; printf %$s's\n' " "
+cat lotsofdots.txt
+clear
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 80 characters wide so the game fits."
+echo "It's currently $CHARWIDTH :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+exit
+fi
+
+if [ "$CHARHEIGHT" -ge "25" ]; then
+PRINTINFO=0
+cat lotsofdots.txt
+sleep 1s
+s=20000; printf %$s's\n' " "
+yes '' | head -n1000
+cat lotsofdots.txt
+cat lotsofdots.txt
+s=20000; printf %$s's\n' " "
+cat lotsofdots.txt
+clear
+echo ""
+echo "ERROR:"
+echo "Please resize your Terminal to be 24 characters high so the game fits."
+echo "It's currently $CHARHEIGHT :("
+echo "The Terminal size ideal for the game is 80x24"
+echo ""
+exit
+fi
+  clear
+  echo -e "$(cat newart.txt)"
   PRINTINFO=0
   # YOU MUST RETURN TO THE INTERPRETER STRAIGHT AFTER SHOWING ART, OR IT BREAKS THE WHOLE GAME, WE CLEANUP THERE
 fi
